@@ -1,0 +1,7 @@
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Common\bin\Debug\netcoreapp1.1\Aguila.Common.deps.json
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Common\bin\Debug\netcoreapp1.1\Aguila.Common.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Common\bin\Debug\netcoreapp1.1\Aguila.Common.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Common\obj\Debug\netcoreapp1.1\Aguila.Common.AssemblyInfo.cs
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Common\obj\Debug\netcoreapp1.1\Aguila.Common.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Common\obj\Debug\netcoreapp1.1\Aguila.Common.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Common\obj\Debug\netcoreapp1.1\Aguila.Common.csprojResolveAssemblyReference.cache

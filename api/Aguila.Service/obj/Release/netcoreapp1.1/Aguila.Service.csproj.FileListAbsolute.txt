@@ -1,0 +1,17 @@
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Service.deps.json
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Service.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Service.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Common.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.DAL.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Models.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Repository.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Common.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.DAL.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Models.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.Repository.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\bin\Release\netcoreapp1.1\Aguila.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\obj\Release\netcoreapp1.1\Aguila.Service.csprojResolveAssemblyReference.cache
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\obj\Release\netcoreapp1.1\Aguila.Service.AssemblyInfo.cs
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\obj\Release\netcoreapp1.1\Aguila.Service.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Service\obj\Release\netcoreapp1.1\Aguila.Service.pdb

@@ -1,0 +1,7 @@
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Models\bin\Debug\netcoreapp1.1\Aguila.Models.deps.json
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Models\bin\Debug\netcoreapp1.1\Aguila.Models.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Models\bin\Debug\netcoreapp1.1\Aguila.Models.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Models\obj\Debug\netcoreapp1.1\Aguila.Models.AssemblyInfo.cs
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Models\obj\Debug\netcoreapp1.1\Aguila.Models.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Models\obj\Debug\netcoreapp1.1\Aguila.Models.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Models\obj\Debug\netcoreapp1.1\Aguila.Models.csprojResolveAssemblyReference.cache

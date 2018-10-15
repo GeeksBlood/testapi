@@ -1,0 +1,453 @@
+2017-09-25T15:12:47.5357551+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T15:12:49.8594884+05:30 0HL83V74HPD51 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T15:12:51.4414896+05:30 0HL83V74HPD51 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T15:12:51.5665779+05:30 0HL83V74HPD51 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T15:12:51.8778473+05:30 0HL83V74HPD51 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 532.5808ms (afa2e885)
+2017-09-25T15:12:52.0709834+05:30 0HL83V74HPD51 [INF] Request finished in 2143.6982ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T15:12:52.4783748+05:30 0HL83V74HPD52 [INF] Request starting HTTP/1.1 GET http://localhost:62336/favicon.ico   (e5be5b71)
+2017-09-25T15:12:52.5204048+05:30 0HL83V74HPD52 [INF] Request finished in 38.815ms 404  (15c52c40)
+2017-09-25T15:25:06.0537603+05:30 0HL83V74HPD53 [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-25T15:25:08.3348443+05:30 0HL83V74HPD53 [INF] Executed DbCommand (88ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-25T15:25:08.5489952+05:30 0HL83V74HPD53 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2017-09-25T15:25:08.5549991+05:30 0HL83V74HPD53 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-09-25T15:25:08.5590023+05:30 0HL83V74HPD53 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2017-09-25T15:25:08.5640058+05:30 0HL83V74HPD53 [INF] "Identity.Application" was not authenticated. Failure message: "No principal." (48071232)
+2017-09-25T15:25:08.5690094+05:30 0HL83V74HPD53 [INF] Handling request: /token (8c275dec)
+2017-09-25T15:25:08.6850914+05:30 0HL83V74HPD53 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-25T15:25:08.7131111+05:30 0HL83V74HPD53 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-25T15:25:09.1033868+05:30 0HL83V74HPD53 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-25T15:25:09.1274041+05:30 0HL83V74HPD53 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-25T15:25:09.1744370+05:30 0HL83V74HPD53 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-25T15:25:09.2054586+05:30 0HL83V74HPD53 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-25T15:25:09.2474893+05:30 0HL83V74HPD53 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-25T15:25:09.2695045+05:30 0HL83V74HPD53 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-25T15:25:09.6948251+05:30 0HL83V74HPD53 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-25T15:25:09.7218435+05:30 0HL83V74HPD53 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-25T15:25:09.7556523+05:30 0HL83V74HPD53 [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-25T15:25:09.9187679+05:30 0HL83V74HPD53 [INF] Request finished in 3835.6227ms 200 application/json (15c52c40)
+2017-09-25T15:25:25.5195002+05:30 0HL83V74HPD54 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Situations/GetSituayionsByCHA/36/1/1 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-25T15:25:25.5325091+05:30 0HL83V74HPD54 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T15:25:25.5975550+05:30 0HL83V74HPD54 [INF] Successfully validated the token. (60169667)
+2017-09-25T15:25:25.6025585+05:30 0HL83V74HPD54 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T15:25:25.6275762+05:30 0HL83V74HPD54 [INF] Request finished in 98.4246ms 404  (15c52c40)
+2017-09-25T16:31:19.7890486+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T16:31:20.7802029+05:30 0HL840J0GKF4M [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T16:31:21.5994926+05:30 0HL840J0GKF4M [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T16:31:21.6540299+05:30 0HL840J0GKF4M [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T16:31:21.9609008+05:30 0HL840J0GKF4M [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 428.9979ms (afa2e885)
+2017-09-25T16:31:22.1785710+05:30 0HL840J0GKF4M [INF] Request finished in 1297.2558ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T17:00:05.7971940+05:30 0HL840J0GKF4N [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-25T17:00:07.9678835+05:30 0HL840J0GKF4N [INF] Executed DbCommand (94ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-25T17:00:08.3078521+05:30 0HL840J0GKF4N [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-25T17:00:08.3478876+05:30 0HL840J0GKF4N [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-25T17:00:08.4001272+05:30 0HL840J0GKF4N [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-25T17:00:08.4338854+05:30 0HL840J0GKF4N [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-25T17:00:08.4592788+05:30 0HL840J0GKF4N [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:00:08.4647825+05:30 0HL840J0GKF4N [INF] Handling request: /token (8c275dec)
+2017-09-25T17:00:08.5663629+05:30 0HL840J0GKF4N [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-25T17:00:08.5903796+05:30 0HL840J0GKF4N [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-25T17:00:08.6921280+05:30 0HL840J0GKF4N [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-25T17:00:09.0708913+05:30 0HL840J0GKF4N [INF] Executed DbCommand (302ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-25T17:00:09.1114201+05:30 0HL840J0GKF4N [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-25T17:00:09.1224275+05:30 0HL840J0GKF4N [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-25T17:00:09.1694611+05:30 0HL840J0GKF4N [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-25T17:00:09.1914759+05:30 0HL840J0GKF4N [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-25T17:00:10.1261573+05:30 0HL840J0GKF4N [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-25T17:00:10.1546882+05:30 0HL840J0GKF4N [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-25T17:00:10.1857143+05:30 0HL840J0GKF4N [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-25T17:00:10.4364134+05:30 0HL840J0GKF4N [INF] Request finished in 4580.0707ms 200 application/json (15c52c40)
+2017-09-25T17:00:36.7113724+05:30 0HL840J0GKF4O [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 3931 (e5be5b71)
+2017-09-25T17:00:36.7433950+05:30 0HL840J0GKF4O [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:00:36.8514713+05:30 0HL840J0GKF4O [INF] Successfully validated the token. (60169667)
+2017-09-25T17:00:36.8644809+05:30 0HL840J0GKF4O [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:00:36.9950722+05:30 0HL840J0GKF4O [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:00:37.0005766+05:30 0HL840J0GKF4O [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:00:37.3694707+05:30 0HL840J0GKF4O [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments ([""]) - ModelState is Invalid (ba7f4ac2)
+2017-09-25T17:00:37.4014937+05:30 0HL840J0GKF4O [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T17:00:37.4074972+05:30 0HL840J0GKF4O [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 432.6391ms (afa2e885)
+2017-09-25T17:00:37.4650490+05:30 0HL840J0GKF4O [INF] Request finished in 793.7829ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-25T17:03:45.7984653+05:30 0HL840J0GKF4P [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 3910 (e5be5b71)
+2017-09-25T17:03:45.8054699+05:30 0HL840J0GKF4P [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:03:45.8089723+05:30 0HL840J0GKF4P [INF] Successfully validated the token. (60169667)
+2017-09-25T17:03:45.8124756+05:30 0HL840J0GKF4P [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:03:45.8238142+05:30 0HL840J0GKF4P [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:03:45.8273168+05:30 0HL840J0GKF4P [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:03:45.8403291+05:30 0HL840J0GKF4P [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments ([""]) - ModelState is Invalid (ba7f4ac2)
+2017-09-25T17:03:45.8488397+05:30 0HL840J0GKF4P [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T17:03:45.8538436+05:30 0HL840J0GKF4P [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 28.8605ms (afa2e885)
+2017-09-25T17:03:45.9268952+05:30 0HL840J0GKF4P [INF] Request finished in 97.4742ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-25T17:04:37.8575782+05:30 0HL840J0GKF4Q [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4759 (e5be5b71)
+2017-09-25T17:04:37.8649157+05:30 0HL840J0GKF4Q [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:04:37.8689202+05:30 0HL840J0GKF4Q [INF] Successfully validated the token. (60169667)
+2017-09-25T17:04:37.8724225+05:30 0HL840J0GKF4Q [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:04:37.8814292+05:30 0HL840J0GKF4Q [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:04:37.8844310+05:30 0HL840J0GKF4Q [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:04:37.9444769+05:30 0HL840J0GKF4Q [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:04:39.1678787+05:30 0HL840J0GKF4Q [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T17:04:39.1726767+05:30 0HL840J0GKF4Q [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 1290.9231ms (afa2e885)
+2017-09-25T17:04:39.2052015+05:30 0HL840J0GKF4Q [INF] Request finished in 1348.8896ms 400  (15c52c40)
+2017-09-25T17:04:51.7253669+05:30 0HL840J0GKF4R [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4723 (e5be5b71)
+2017-09-25T17:04:51.7373754+05:30 0HL840J0GKF4R [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:04:51.7413789+05:30 0HL840J0GKF4R [INF] Successfully validated the token. (60169667)
+2017-09-25T17:04:51.7453810+05:30 0HL840J0GKF4R [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:04:51.7538865+05:30 0HL840J0GKF4R [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:04:51.7578897+05:30 0HL840J0GKF4R [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:04:51.7633934+05:30 0HL840J0GKF4R [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:04:51.8308167+05:30 0HL840J0GKF4R [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T17:04:51.8343194+05:30 0HL840J0GKF4R [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 80.4149ms (afa2e885)
+2017-09-25T17:04:51.8548344+05:30 0HL840J0GKF4R [INF] Request finished in 164.4915ms 400  (15c52c40)
+2017-09-25T17:05:01.8173166+05:30 0HL840J0GKF4S [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4695 (e5be5b71)
+2017-09-25T17:05:01.8278215+05:30 0HL840J0GKF4S [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:05:01.8318239+05:30 0HL840J0GKF4S [INF] Successfully validated the token. (60169667)
+2017-09-25T17:05:01.8358268+05:30 0HL840J0GKF4S [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:05:01.8458335+05:30 0HL840J0GKF4S [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:01.8508377+05:30 0HL840J0GKF4S [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:01.8573418+05:30 0HL840J0GKF4S [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:05:01.9373361+05:30 0HL840J0GKF4S [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T17:05:01.9408380+05:30 0HL840J0GKF4S [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 95.6626ms (afa2e885)
+2017-09-25T17:05:01.9568500+05:30 0HL840J0GKF4S [INF] Request finished in 145.7712ms 400  (15c52c40)
+2017-09-25T17:05:07.7375317+05:30 0HL840J0GKF4T [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4676 (e5be5b71)
+2017-09-25T17:05:07.7510411+05:30 0HL840J0GKF4T [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:05:07.7550439+05:30 0HL840J0GKF4T [INF] Successfully validated the token. (60169667)
+2017-09-25T17:05:07.7585465+05:30 0HL840J0GKF4T [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:05:07.7675556+05:30 0HL840J0GKF4T [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:07.7710583+05:30 0HL840J0GKF4T [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:07.7765624+05:30 0HL840J0GKF4T [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:05:08.0037858+05:30 0HL840J0GKF4T [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T17:05:08.0082888+05:30 0HL840J0GKF4T [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 240.2573ms (afa2e885)
+2017-09-25T17:05:08.0232994+05:30 0HL840J0GKF4T [INF] Request finished in 293.4138ms 400  (15c52c40)
+2017-09-25T17:05:15.6712863+05:30 0HL840J0GKF4U [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4639 (e5be5b71)
+2017-09-25T17:05:15.6832944+05:30 0HL840J0GKF4U [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:05:15.6872972+05:30 0HL840J0GKF4U [INF] Successfully validated the token. (60169667)
+2017-09-25T17:05:15.6908002+05:30 0HL840J0GKF4U [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:05:15.7038087+05:30 0HL840J0GKF4U [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:15.7070373+05:30 0HL840J0GKF4U [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:15.7125428+05:30 0HL840J0GKF4U [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:05:16.1395185+05:30 0HL840J0GKF4U [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T17:05:16.1450226+05:30 0HL840J0GKF4U [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 439.6859ms (afa2e885)
+2017-09-25T17:05:16.3321599+05:30 0HL840J0GKF4U [INF] Request finished in 677.8614ms 400  (15c52c40)
+2017-09-25T17:05:37.7418613+05:30 0HL840J0GKF4V [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4602 (e5be5b71)
+2017-09-25T17:05:37.7563710+05:30 0HL840J0GKF4V [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:05:37.7598736+05:30 0HL840J0GKF4V [INF] Successfully validated the token. (60169667)
+2017-09-25T17:05:37.7633759+05:30 0HL840J0GKF4V [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:05:37.7718821+05:30 0HL840J0GKF4V [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:37.7748846+05:30 0HL840J0GKF4V [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:37.7805214+05:30 0HL840J0GKF4V [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:05:37.8607805+05:30 0HL840J0GKF4V [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T17:05:37.8642828+05:30 0HL840J0GKF4V [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 92.3943ms (afa2e885)
+2017-09-25T17:05:37.8782988+05:30 0HL840J0GKF4V [INF] Request finished in 171.6258ms 400  (15c52c40)
+2017-09-25T17:05:48.6965031+05:30 0HL840J0GKF50 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4530 (e5be5b71)
+2017-09-25T17:05:48.7315275+05:30 0HL840J0GKF50 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:05:48.7355310+05:30 0HL840J0GKF50 [INF] Successfully validated the token. (60169667)
+2017-09-25T17:05:48.7445380+05:30 0HL840J0GKF50 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:05:48.7535430+05:30 0HL840J0GKF50 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:48.7575530+05:30 0HL840J0GKF50 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:05:48.7625569+05:30 0HL840J0GKF50 [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:05:49.1890085+05:30 0HL840J0GKF50 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T17:05:49.1927869+05:30 0HL840J0GKF50 [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 439.2178ms (afa2e885)
+2017-09-25T17:05:49.2077979+05:30 0HL840J0GKF50 [INF] Request finished in 514.7472ms 400  (15c52c40)
+2017-09-25T17:06:06.5157843+05:30 0HL840J0GKF51 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 4066 (e5be5b71)
+2017-09-25T17:06:06.5267921+05:30 0HL840J0GKF51 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T17:06:06.5307946+05:30 0HL840J0GKF51 [INF] Successfully validated the token. (60169667)
+2017-09-25T17:06:06.5342976+05:30 0HL840J0GKF51 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T17:06:06.5453046+05:30 0HL840J0GKF51 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:06:06.5488073+05:30 0HL840J0GKF51 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T17:06:06.5603153+05:30 0HL840J0GKF51 [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.SituationsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T17:06:07.4864761+05:30 0HL840J0GKF51 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T17:06:07.4934807+05:30 0HL840J0GKF51 [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 946.4921ms (afa2e885)
+2017-09-25T17:06:07.5675385+05:30 0HL840J0GKF51 [INF] Request finished in 1030.7347ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T18:51:56.0215580+05:30 0HL840J0GKF52 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Rounds application/json 438 (e5be5b71)
+2017-09-25T18:51:56.1591538+05:30 0HL840J0GKF52 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-25T18:51:56.2241997+05:30 0HL840J0GKF52 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-25T18:51:56.2662287+05:30 0HL840J0GKF52 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-25T18:51:56.2782371+05:30 0HL840J0GKF52 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-25T18:51:56.2887440+05:30 0HL840J0GKF52 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-25T18:51:56.2944639+05:30 0HL840J0GKF52 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T18:51:56.2999323+05:30 0HL840J0GKF52 [INF] Successfully validated the token. (60169667)
+2017-09-25T18:51:56.3039348+05:30 0HL840J0GKF52 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T18:51:56.3293769+05:30 0HL840J0GKF52 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T18:51:56.3939037+05:30 0HL840J0GKF52 [INF] Executing action method "Aguila.Controllers.RoundsController.Post (Aguila)" with arguments (["Aguila.Models.UserRoundCompletedsDto"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T18:52:10.1329618+05:30 0HL840J0GKF52 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T18:52:10.1434690+05:30 0HL840J0GKF52 [INF] Executed action "Aguila.Controllers.RoundsController.Post (Aguila)" in 13814.3672ms (afa2e885)
+2017-09-25T18:52:10.2000139+05:30 0HL840J0GKF52 [INF] Request finished in 14234.7426ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T22:55:06.0031780+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T22:55:07.6853545+05:30 0HL8479F2ACKQ [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T22:55:08.6300156+05:30 0HL8479F2ACKQ [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T22:55:08.7130734+05:30 0HL8479F2ACKQ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T22:55:09.0713248+05:30 0HL8479F2ACKQ [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 532.3529ms (afa2e885)
+2017-09-25T22:55:09.1223605+05:30 0HL8479F2ACKQ [INF] Request finished in 1508.6971ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T22:57:02.5013609+05:30 0HL8479F2ACKR [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T22:57:04.3843794+05:30 0HL8479F2ACKR [INF] Executed DbCommand (106ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-25T22:57:05.2329795+05:30 0HL8479F2ACKR [INF] Executed DbCommand (223ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-25T22:57:05.2910202+05:30 0HL8479F2ACKR [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-25T22:57:05.3630707+05:30 0HL8479F2ACKR [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-25T22:57:05.4000972+05:30 0HL8479F2ACKR [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-25T22:57:05.4231135+05:30 0HL8479F2ACKR [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T22:57:05.5502032+05:30 0HL8479F2ACKR [INF] Successfully validated the token. (60169667)
+2017-09-25T22:57:05.5582092+05:30 0HL8479F2ACKR [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T22:57:05.6012389+05:30 0HL8479F2ACKR [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T22:57:05.6069308+05:30 0HL8479F2ACKR [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T22:57:05.8040697+05:30 0HL8479F2ACKR [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T22:57:19.7082400+05:30 0HL8479F2ACKR [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-25T22:57:19.7142442+05:30 0HL8479F2ACKR [INF] Executed action "Aguila.Controllers.SituationsController.Post (Aguila)" in 14131.4837ms (afa2e885)
+2017-09-25T22:57:19.7892976+05:30 0HL8479F2ACKR [INF] Request finished in 17263.5737ms 400  (15c52c40)
+2017-09-25T22:57:22.5892773+05:30 0HL8479F2ACKS [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T22:57:22.6022869+05:30 0HL8479F2ACKS [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T22:57:22.6312998+05:30 0HL8479F2ACKS [INF] Successfully validated the token. (60169667)
+2017-09-25T22:57:22.6373048+05:30 0HL8479F2ACKS [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T22:57:22.6533154+05:30 0HL8479F2ACKS [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T22:57:22.6583186+05:30 0HL8479F2ACKS [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T22:57:22.6663242+05:30 0HL8479F2ACKS [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:00:46.3286026+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:00:47.1111064+05:30 0HL847CK7AJF4 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:00:48.0968020+05:30 0HL847CK7AJF4 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:00:48.1568437+05:30 0HL847CK7AJF4 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:00:48.4260338+05:30 0HL847CK7AJF4 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 405.2391ms (afa2e885)
+2017-09-25T23:00:48.4610586+05:30 0HL847CK7AJF4 [INF] Request finished in 1390.7686ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:00:51.1283634+05:30 0HL847CK7AJF5 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:00:51.2664616+05:30 0HL847CK7AJF5 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:00:51.3845450+05:30 0HL847CK7AJF5 [INF] Successfully validated the token. (60169667)
+2017-09-25T23:00:51.3905493+05:30 0HL847CK7AJF5 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:00:51.4295765+05:30 0HL847CK7AJF5 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:00:51.4345807+05:30 0HL847CK7AJF5 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:00:51.6657426+05:30 0HL847CK7AJF5 [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:13:49.0269954+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:13:50.1760607+05:30 0HL847JTJ7BUJ [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:13:51.0426725+05:30 0HL847JTJ7BUJ [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:13:51.1157237+05:30 0HL847JTJ7BUJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:13:51.4469580+05:30 0HL847JTJ7BUJ [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 466.3213ms (afa2e885)
+2017-09-25T23:13:51.4959926+05:30 0HL847JTJ7BUJ [INF] Request finished in 1362.4715ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:14:02.3387510+05:30 0HL847JTJ7BUK [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:14:02.4658401+05:30 0HL847JTJ7BUK [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:14:02.5849242+05:30 0HL847JTJ7BUK [INF] Successfully validated the token. (60169667)
+2017-09-25T23:14:02.5909284+05:30 0HL847JTJ7BUK [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:14:02.6299567+05:30 0HL847JTJ7BUK [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:14:02.6409641+05:30 0HL847JTJ7BUK [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:14:02.8740450+05:30 0HL847JTJ7BUK [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:15:52.7016771+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:15:53.3671488+05:30 0HL847L2A2TF3 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:15:54.3018090+05:30 0HL847L2A2TF3 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:15:54.3508433+05:30 0HL847L2A2TF3 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:15:54.6350444+05:30 0HL847L2A2TF3 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 376.7583ms (afa2e885)
+2017-09-25T23:15:54.6720702+05:30 0HL847L2A2TF3 [INF] Request finished in 1361.1205ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:16:01.1815401+05:30 0HL847L2A2TF4 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:16:01.3216384+05:30 0HL847L2A2TF4 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:16:01.4527320+05:30 0HL847L2A2TF4 [INF] Successfully validated the token. (60169667)
+2017-09-25T23:16:01.4617373+05:30 0HL847L2A2TF4 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:16:01.5027670+05:30 0HL847L2A2TF4 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:16:01.5077702+05:30 0HL847L2A2TF4 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:16:01.7529440+05:30 0HL847L2A2TF4 [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:17:11.2212714+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:17:11.8637255+05:30 0HL847LPMLI1S [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:17:12.6913101+05:30 0HL847LPMLI1S [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:17:12.7533536+05:30 0HL847LPMLI1S [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:17:13.0301918+05:30 0HL847LPMLI1S [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 397.3292ms (afa2e885)
+2017-09-25T23:17:13.0852304+05:30 0HL847LPMLI1S [INF] Request finished in 1255.0908ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:17:20.8196780+05:30 0HL847LPMLI1T [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:17:21.1819339+05:30 0HL847LPMLI1T [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:17:21.3190304+05:30 0HL847LPMLI1T [INF] Successfully validated the token. (60169667)
+2017-09-25T23:17:21.3260353+05:30 0HL847LPMLI1T [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:17:21.3820749+05:30 0HL847LPMLI1T [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:17:21.3910806+05:30 0HL847LPMLI1T [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:17:21.6652746+05:30 0HL847LPMLI1T [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:20:04.7584139+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:20:05.5079440+05:30 0HL847NDEL8JD [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:20:06.3405324+05:30 0HL847NDEL8JD [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:20:06.3875656+05:30 0HL847NDEL8JD [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:20:06.6307370+05:30 0HL847NDEL8JD [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 340.6149ms (afa2e885)
+2017-09-25T23:20:06.6957830+05:30 0HL847NDEL8JD [INF] Request finished in 1211.6188ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:20:18.1743443+05:30 0HL847NDEL8JE [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:20:18.3086949+05:30 0HL847NDEL8JE [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:20:18.4467924+05:30 0HL847NDEL8JE [INF] Successfully validated the token. (60169667)
+2017-09-25T23:20:18.4527963+05:30 0HL847NDEL8JE [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:20:18.4888225+05:30 0HL847NDEL8JE [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:20:18.5138336+05:30 0HL847NDEL8JE [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:20:18.8140450+05:30 0HL847NDEL8JE [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:22:13.5843758+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:22:14.3869905+05:30 0HL847OJRO11B [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:22:15.1655401+05:30 0HL847OJRO11B [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:22:15.2175762+05:30 0HL847OJRO11B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:22:15.5628224+05:30 0HL847OJRO11B [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 435.7326ms (afa2e885)
+2017-09-25T23:22:15.7229341+05:30 0HL847OJRO11B [INF] Request finished in 1276.0171ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:22:22.3420966+05:30 0HL847OJRO11C [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:22:22.7143599+05:30 0HL847OJRO11C [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:22:22.8694698+05:30 0HL847OJRO11C [INF] Successfully validated the token. (60169667)
+2017-09-25T23:22:22.9054952+05:30 0HL847OJRO11C [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:22:23.0095691+05:30 0HL847OJRO11C [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:22:23.0145719+05:30 0HL847OJRO11C [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:22:23.2727546+05:30 0HL847OJRO11C [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:24:52.3500951+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:24:53.3177792+05:30 0HL847Q37E59E [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:24:54.1343557+05:30 0HL847Q37E59E [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:24:54.1893942+05:30 0HL847Q37E59E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:24:54.4535815+05:30 0HL847Q37E59E [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 366.0378ms (afa2e885)
+2017-09-25T23:24:54.6086907+05:30 0HL847Q37E59E [INF] Request finished in 1262.9483ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:33:29.6327015+05:30 0HL847Q37E59F [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:33:31.5238742+05:30 0HL847Q37E59F [INF] Executed DbCommand (98ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-25T23:33:31.9791965+05:30 0HL847Q37E59F [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-25T23:33:32.0412407+05:30 0HL847Q37E59F [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-25T23:33:32.0992810+05:30 0HL847Q37E59F [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-25T23:33:32.1387797+05:30 0HL847Q37E59F [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-25T23:33:32.1617959+05:30 0HL847Q37E59F [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:33:32.3018949+05:30 0HL847Q37E59F [INF] Successfully validated the token. (60169667)
+2017-09-25T23:33:32.3088991+05:30 0HL847Q37E59F [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:33:32.3509298+05:30 0HL847Q37E59F [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:33:32.3809606+05:30 0HL847Q37E59F [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:33:32.6771709+05:30 0HL847Q37E59F [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:35:19.7926699+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-25T23:35:20.9655027+05:30 0HL847VU951J8 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-25T23:35:21.8050951+05:30 0HL847VU951J8 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-25T23:35:21.8811484+05:30 0HL847VU951J8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-25T23:35:22.2444054+05:30 0HL847VU951J8 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 486.2479ms (afa2e885)
+2017-09-25T23:35:22.3274637+05:30 0HL847VU951J8 [INF] Request finished in 1388.4347ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-25T23:35:32.8091663+05:30 0HL847VU951J9 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Situations application/json 9769 (e5be5b71)
+2017-09-25T23:35:34.4451328+05:30 0HL847VU951J9 [INF] Executed DbCommand (91ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-25T23:35:34.7883759+05:30 0HL847VU951J9 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-25T23:35:34.8203978+05:30 0HL847VU951J9 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-25T23:35:35.1844567+05:30 0HL847VU951J9 [INF] Executed DbCommand (305ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-25T23:35:35.2511938+05:30 0HL847VU951J9 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-25T23:35:35.3492640+05:30 0HL847VU951J9 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-25T23:35:35.4943655+05:30 0HL847VU951J9 [INF] Successfully validated the token. (60169667)
+2017-09-25T23:35:35.5123786+05:30 0HL847VU951J9 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-25T23:35:35.6835001+05:30 0HL847VU951J9 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:35:35.6915048+05:30 0HL847VU951J9 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-25T23:35:35.9536906+05:30 0HL847VU951J9 [INF] Executing action method "Aguila.Controllers.SituationsController.Post (Aguila)" with arguments (["Aguila.Models.NewSituationViewModel"]) - ModelState is Valid (ba7f4ac2)

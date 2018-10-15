@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aguila", "Aguila\Aguila.csproj", "{4372768B-1A2C-4282-9588-A6C0F60E4CC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aguila.Common", "Aguila.Common\Aguila.Common.csproj", "{DF7EF5C7-D63D-4587-8909-057F8EECE94C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aguila.Models", "Aguila.Models\Aguila.Models.csproj", "{A3713715-4F1E-4623-8DB4-EAC2912BAC84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aguila.DAL", "Aguila.DAL\Aguila.DAL.csproj", "{19CE1F4C-8F5F-4ADD-AAD3-23E523326196}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aguila.Tests", "Aguila.Tests\Aguila.Tests.csproj", "{7AD6E826-42BC-45CE-9211-4E8A2081FAEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aguila.Repository", "Aguila.Repository\Aguila.Repository.csproj", "{C5C0AF2B-B98D-48D3-AEC4-C613C766D8EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aguila.Service", "Aguila.Service\Aguila.Service.csproj", "{254F15D2-0DDE-4521-B347-7E61D5E8EEAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4372768B-1A2C-4282-9588-A6C0F60E4CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4372768B-1A2C-4282-9588-A6C0F60E4CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4372768B-1A2C-4282-9588-A6C0F60E4CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4372768B-1A2C-4282-9588-A6C0F60E4CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7EF5C7-D63D-4587-8909-057F8EECE94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7EF5C7-D63D-4587-8909-057F8EECE94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7EF5C7-D63D-4587-8909-057F8EECE94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7EF5C7-D63D-4587-8909-057F8EECE94C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3713715-4F1E-4623-8DB4-EAC2912BAC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3713715-4F1E-4623-8DB4-EAC2912BAC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3713715-4F1E-4623-8DB4-EAC2912BAC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3713715-4F1E-4623-8DB4-EAC2912BAC84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CE1F4C-8F5F-4ADD-AAD3-23E523326196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CE1F4C-8F5F-4ADD-AAD3-23E523326196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CE1F4C-8F5F-4ADD-AAD3-23E523326196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CE1F4C-8F5F-4ADD-AAD3-23E523326196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD6E826-42BC-45CE-9211-4E8A2081FAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD6E826-42BC-45CE-9211-4E8A2081FAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD6E826-42BC-45CE-9211-4E8A2081FAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD6E826-42BC-45CE-9211-4E8A2081FAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C0AF2B-B98D-48D3-AEC4-C613C766D8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C0AF2B-B98D-48D3-AEC4-C613C766D8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C0AF2B-B98D-48D3-AEC4-C613C766D8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C0AF2B-B98D-48D3-AEC4-C613C766D8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{254F15D2-0DDE-4521-B347-7E61D5E8EEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{254F15D2-0DDE-4521-B347-7E61D5E8EEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{254F15D2-0DDE-4521-B347-7E61D5E8EEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{254F15D2-0DDE-4521-B347-7E61D5E8EEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs01:8080/tfs/chetuprojects
+		SccProjectUniqueName0 = Aguila.Common\\Aguila.Common.csproj
+		SccProjectName0 = ../../Aguila.Common
+		SccLocalPath0 = Aguila.Common
+		SccProjectUniqueName1 = Aguila.DAL\\Aguila.DAL.csproj
+		SccProjectName1 = ../../Aguila.DAL
+		SccLocalPath1 = Aguila.DAL
+		SccProjectUniqueName2 = Aguila.Models\\Aguila.Models.csproj
+		SccProjectName2 = ../../Aguila.Models
+		SccLocalPath2 = Aguila.Models
+		SccProjectUniqueName3 = Aguila.Repository\\Aguila.Repository.csproj
+		SccProjectName3 = ../../Aguila.Repository
+		SccLocalPath3 = Aguila.Repository
+		SccProjectUniqueName4 = Aguila.Service\\Aguila.Service.csproj
+		SccProjectName4 = ../../Aguila.Service
+		SccLocalPath4 = Aguila.Service
+		SccProjectUniqueName5 = Aguila.Tests\\Aguila.Tests.csproj
+		SccProjectName5 = ../../Aguila.Tests
+		SccLocalPath5 = Aguila.Tests
+		SccProjectUniqueName6 = Aguila\\Aguila.csproj
+		SccProjectName6 = ../../Aguila
+		SccLocalPath6 = Aguila
+		SccLocalPath7 = .
+	EndGlobalSection
+EndGlobal

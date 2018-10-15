@@ -1,0 +1,12 @@
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Aguila.Tests.deps.json
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Aguila.Tests.runtimeconfig.json
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Aguila.Tests.runtimeconfig.dev.json
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Aguila.Tests.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\bin\Debug\netcoreapp1.1\Aguila.Tests.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\obj\Debug\netcoreapp1.1\Aguila.Tests.AssemblyInfo.cs
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\obj\Debug\netcoreapp1.1\Aguila.Tests.dll
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\obj\Debug\netcoreapp1.1\Aguila.Tests.pdb
+E:\TFS\AguilaTechnologies-GAMS\Aguila.Tests\obj\Debug\netcoreapp1.1\Aguila.Tests.csprojResolveAssemblyReference.cache

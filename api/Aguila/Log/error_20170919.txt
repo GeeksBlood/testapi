@@ -1,0 +1,692 @@
+2017-09-19T15:41:21.3148196+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-19T15:41:24.0417438+05:30 0HL7V8R45R0F1 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-19T15:41:24.8943454+05:30 0HL7V8R45R0F1 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-19T15:41:24.9934153+05:30 0HL7V8R45R0F1 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T15:41:25.2305823+05:30 0HL7V8R45R0F1 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 407.1393ms (afa2e885)
+2017-09-19T15:41:25.3676798+05:30 0HL7V8R45R0F1 [INF] Request finished in 1664.6067ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T15:41:25.4117102+05:30 0HL7V8R45R0F2 [INF] Request starting HTTP/1.1 GET http://localhost:62336/favicon.ico   (e5be5b71)
+2017-09-19T15:41:25.4547409+05:30 0HL7V8R45R0F2 [INF] Request finished in 51.3521ms 404  (15c52c40)
+2017-09-19T15:41:51.6662710+05:30 0HL7V8R45R0F3 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/PasswordResetRequest application/json 32 (e5be5b71)
+2017-09-19T15:41:53.6314402+05:30 0HL7V8R45R0F3 [INF] Executed DbCommand (100ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-19T15:41:53.9906934+05:30 0HL7V8R45R0F3 [INF] Executed DbCommand (52ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T15:41:54.0907640+05:30 0HL7V8R45R0F3 [INF] Executed DbCommand (49ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T15:41:54.2018619+05:30 0HL7V8R45R0F3 [INF] Executed DbCommand (50ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T15:41:54.3339555+05:30 0HL7V8R45R0F3 [INF] Executed DbCommand (47ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T15:41:54.3529689+05:30 0HL7V8R45R0F3 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T15:41:54.4570423+05:30 0HL7V8R45R0F3 [INF] Successfully validated the token. (60169667)
+2017-09-19T15:41:54.4630459+05:30 0HL7V8R45R0F3 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T15:41:54.6171553+05:30 0HL7V8R45R0F3 [INF] Executing action method "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" with arguments (["Aguila.Models.ForgotPasswordViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-19T15:43:54.6578873+05:30 0HL7V8R45R0F3 [INF] Executed DbCommand (42ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T15:43:59.0363667+05:30 0HL7V8R45R0F3 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T15:43:59.1987034+05:30 0HL7V8R45R0F3 [ERR] An exception occurred in the database while iterating the results of a query.
+ (3b5ca34b)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable.AsyncEnumerator.<BufferlessMoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__6`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable.AsyncEnumerator.<MoveNext>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.SelectAsyncEnumerable`2.SelectAsyncEnumerator.<MoveNext>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.<_FirstOrDefault>d__82`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.SelectAsyncEnumerable`2.SelectAsyncEnumerator.<MoveNext>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+2017-09-19T15:43:59.3317967+05:30 0HL7V8R45R0F3 [INF] Executed action "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" in 124852.2767ms (afa2e885)
+2017-09-19T15:43:59.4512317+05:30 0HL7V8R45R0F3 [INF]    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.<ValidateUserName>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Identity.UserValidator`1.<ValidateAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Identity.UserManager`1.<ValidateUserInternal>d__157.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Identity.UserManager`1.<UpdateUserAsync>d__159.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Identity.UserManager`1.<RemovePasswordAsync>d__83.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Aguila.Service.AccountService.<ForgotPassword>d__12.MoveNext() in D:\Aguila\TFS\Aguila.Service\AccountService.cs:line 101
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Aguila.Controllers.AccountController.<ForgotPassword>d__4.MoveNext() in D:\Aguila\TFS\Aguila\Controllers\AccountController.cs:line 75
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Aguila.ErrorHandlingMiddleware.<Invoke>d__3.MoveNext() in D:\Aguila\TFS\Aguila\ErrorHandlingMiddleware.cs:line 25 (b87b3f43)
+2017-09-19T15:43:59.7912922+05:30 0HL7V8R45R0F3 [INF] Request finished in 128128.0819ms 500 application/json (15c52c40)
+2017-09-19T16:12:28.3427309+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-19T16:12:29.0832969+05:30 0HL7V9CG08QL9 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-19T16:12:29.7267499+05:30 0HL7V9CG08QL9 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-19T16:12:29.7683095+05:30 0HL7V9CG08QL9 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T16:12:29.9774574+05:30 0HL7V9CG08QL9 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 288.9147ms (afa2e885)
+2017-09-19T16:12:30.0515100+05:30 0HL7V9CG08QL9 [INF] Request finished in 998.9578ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T16:13:10.7469539+05:30 0HL7V9CG08QLA [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/PasswordResetRequest application/json 32 (e5be5b71)
+2017-09-19T16:13:12.1285127+05:30 0HL7V9CG08QLA [INF] Executed DbCommand (79ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-19T16:13:12.4297253+05:30 0HL7V9CG08QLA [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T16:13:12.4577372+05:30 0HL7V9CG08QLA [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T16:13:12.5027686+05:30 0HL7V9CG08QLA [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T16:13:12.5347915+05:30 0HL7V9CG08QLA [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T16:13:12.5447983+05:30 0HL7V9CG08QLA [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T16:13:12.6889003+05:30 0HL7V9CG08QLA [INF] Successfully validated the token. (60169667)
+2017-09-19T16:13:12.6969059+05:30 0HL7V9CG08QLA [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T16:13:12.9080553+05:30 0HL7V9CG08QLA [INF] Executing action method "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" with arguments (["Aguila.Models.ForgotPasswordViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-19T16:13:17.0677074+05:30 0HL7V9CG08QLA [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T16:13:20.4743797+05:30 0HL7V9CG08QLA [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T16:13:20.5054022+05:30 0HL7V9CG08QLA [INF] Executed action "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" in 7782.2162ms (afa2e885)
+2017-09-19T16:13:20.5324203+05:30 0HL7V9CG08QLA [INF] Request finished in 9776.8004ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T20:20:47.0427005+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-19T20:20:47.9942475+05:30 0HL7VDN87G6FR [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-19T20:20:48.9832274+05:30 0HL7VDN87G6FR [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-19T20:20:49.0232553+05:30 0HL7VDN87G6FR [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T20:20:49.2774781+05:30 0HL7VDN87G6FR [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 308.0445ms (afa2e885)
+2017-09-19T20:20:49.3915572+05:30 0HL7VDN87G6FR [INF] Request finished in 1440.5908ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T20:20:55.4323833+05:30 0HL7VDN87G6FS [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/PasswordResetRequest application/json 32 (e5be5b71)
+2017-09-19T20:20:57.0980848+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (81ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-19T20:20:57.4953556+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (50ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T20:20:57.5443892+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T20:20:57.6024301+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T20:20:57.6394573+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T20:20:57.6524654+05:30 0HL7VDN87G6FS [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T20:20:57.7670020+05:30 0HL7VDN87G6FS [INF] Successfully validated the token. (60169667)
+2017-09-19T20:20:57.7725560+05:30 0HL7VDN87G6FS [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T20:20:57.9887102+05:30 0HL7VDN87G6FS [INF] Executing action method "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" with arguments (["Aguila.Models.ForgotPasswordViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-19T20:21:00.9472434+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (42ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:22:06.8835834+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:22:07.0712700+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (13ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-19T20:22:07.9841049+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:22:08.0001361+05:30 0HL7VDN87G6FS [INF] Executed DbCommand (5ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-19T20:22:09.9751687+05:30 0HL7VDN87G6FS [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T20:22:10.0091937+05:30 0HL7VDN87G6FS [INF] Executed action "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" in 72210.3127ms (afa2e885)
+2017-09-19T20:22:10.0232036+05:30 0HL7VDN87G6FS [INF] Request finished in 74591.9926ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T20:23:26.2633426+05:30 0HL7VDN87G6FT [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 69 (e5be5b71)
+2017-09-19T20:23:26.2893620+05:30 0HL7VDN87G6FT [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T20:23:26.2943652+05:30 0HL7VDN87G6FT [INF] Handling request: /token (8c275dec)
+2017-09-19T20:23:26.4404977+05:30 0HL7VDN87G6FT [INF] Executed DbCommand (35ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:23:26.4645171+05:30 0HL7VDN87G6FT [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:23:26.5075471+05:30 0HL7VDN87G6FT [WRN] Invalid password for user "52a4077e-f5fb-459d-9b6d-646ceaee44d2". (c2dce6c7)
+2017-09-19T20:23:26.5115503+05:30 0HL7VDN87G6FT [WRN] User "52a4077e-f5fb-459d-9b6d-646ceaee44d2" failed to provide the correct password. (ec8d2479)
+2017-09-19T20:23:26.5365676+05:30 0HL7VDN87G6FT [INF] Request finished in 305.1994ms 400  (15c52c40)
+2017-09-19T20:23:41.0610967+05:30 0HL7VDN87G6FU [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-19T20:23:41.0731052+05:30 0HL7VDN87G6FU [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T20:23:41.0801098+05:30 0HL7VDN87G6FU [INF] Handling request: /token (8c275dec)
+2017-09-19T20:23:41.1121330+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:23:41.1361493+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:23:41.1891874+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T20:23:41.2182072+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T20:23:41.2322171+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T20:23:41.2472284+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T20:23:41.2772499+05:30 0HL7VDN87G6FU [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-19T20:23:42.9225062+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T20:23:43.4038466+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-19T20:23:43.4879052+05:30 0HL7VDN87G6FU [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-19T20:23:43.5149250+05:30 0HL7VDN87G6FU [WRN] User "52a4077e-f5fb-459d-9b6d-646ceaee44d2" is already in role "User". (337e5c15)
+2017-09-19T20:23:43.6089913+05:30 0HL7VDN87G6FU [INF] Request finished in 2514.9473ms 200 application/json (15c52c40)
+2017-09-19T22:15:57.4565424+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-19T22:15:58.2871476+05:30 0HL7VFNJL1L0O [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-19T22:15:58.9616239+05:30 0HL7VFNJL1L0O [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-19T22:15:59.0096571+05:30 0HL7VFNJL1L0O [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T22:15:59.2248100+05:30 0HL7VFNJL1L0O [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 301.3847ms (afa2e885)
+2017-09-19T22:15:59.3078686+05:30 0HL7VFNJL1L0O [INF] Request finished in 1048.3048ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T22:16:12.0369636+05:30 0HL7VFNJL1L0P [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/PasswordResetRequest application/json 32 (e5be5b71)
+2017-09-19T22:16:13.3989243+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (89ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-19T22:16:13.6941333+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T22:16:13.7221524+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T22:16:13.7853720+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T22:16:13.8183939+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T22:16:13.8284010+05:30 0HL7VFNJL1L0P [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:16:14.0325813+05:30 0HL7VFNJL1L0P [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdW1pdHIyQGNoZXR1LmNvbSIsImp0aSI6IjQwY2Y3NDRlLWNkMWQtNGFmYS1iMGIxLWI3NmU5MDRjMGI0NSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic3VtaXRyMkBjaGV0dS5jb20iLCJuYmYiOjE1MDU3NDcxMTUsImV4cCI6MTUwNTgzMzUxNSwiaXNzIjoiQWd1aWxhVGVjaG5vbG9naWVzIiwiYXVkIjoiQWd1aWxhVGVjaG5vbG9naWVzR29sZlRyYWluZXIifQ.r1AEv3UNY_oU1EVsoySKpAhOMLg6VIZvxv6TE7kZz10". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '09/19/2017 15:05:15'
+Current time: '09/19/2017 16:46:13'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.<HandleAuthenticateAsync>d__1.MoveNext()
+2017-09-19T22:16:14.0375852+05:30 0HL7VFNJL1L0P [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '09/19/2017 15:05:15'
+Current time: '09/19/2017 16:46:13'." (48071232)
+2017-09-19T22:16:14.2137485+05:30 0HL7VFNJL1L0P [INF] Executing action method "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" with arguments (["Aguila.Models.ForgotPasswordViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-19T22:16:18.9851242+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:16:26.1581195+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:16:26.3102258+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (8ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-19T22:16:27.4953965+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (29ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:16:27.5542999+05:30 0HL7VFNJL1L0P [INF] Executed DbCommand (5ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-19T22:16:37.3728587+05:30 0HL7VFNJL1L0P [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T22:16:37.4048827+05:30 0HL7VFNJL1L0P [INF] Executed action "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" in 23325.1001ms (afa2e885)
+2017-09-19T22:16:37.4309007+05:30 0HL7VFNJL1L0P [INF] Request finished in 25393.1283ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T22:19:13.1141408+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-19T22:19:13.8265556+05:30 0HL7VFPDTRHHL [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-19T22:19:14.4650068+05:30 0HL7VFPDTRHHL [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-19T22:19:14.5080358+05:30 0HL7VFPDTRHHL [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T22:19:14.7291925+05:30 0HL7VFPDTRHHL [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 296.3483ms (afa2e885)
+2017-09-19T22:19:14.8702924+05:30 0HL7VFPDTRHHL [INF] Request finished in 1049.0109ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T22:20:07.1027861+05:30 0HL7VFPDTRHHM [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/PasswordResetRequest application/json 32 (e5be5b71)
+2017-09-19T22:20:07.2298761+05:30 0HL7VFPDTRHHM [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:20:07.3839835+05:30 0HL7VFPDTRHHM [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdW1pdHIyQGNoZXR1LmNvbSIsImp0aSI6IjQwY2Y3NDRlLWNkMWQtNGFmYS1iMGIxLWI3NmU5MDRjMGI0NSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic3VtaXRyMkBjaGV0dS5jb20iLCJuYmYiOjE1MDU3NDcxMTUsImV4cCI6MTUwNTgzMzUxNSwiaXNzIjoiQWd1aWxhVGVjaG5vbG9naWVzIiwiYXVkIjoiQWd1aWxhVGVjaG5vbG9naWVzR29sZlRyYWluZXIifQ.r1AEv3UNY_oU1EVsoySKpAhOMLg6VIZvxv6TE7kZz10". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '09/19/2017 15:05:15'
+Current time: '09/19/2017 16:50:07'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.<HandleAuthenticateAsync>d__1.MoveNext()
+2017-09-19T22:20:07.3889880+05:30 0HL7VFPDTRHHM [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '09/19/2017 15:05:15'
+Current time: '09/19/2017 16:50:07'." (48071232)
+2017-09-19T22:20:07.5501014+05:30 0HL7VFPDTRHHM [INF] Executing action method "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" with arguments (["Aguila.Models.ForgotPasswordViewModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-19T22:20:12.7291032+05:30 0HL7VFPDTRHHM [INF] Executed DbCommand (90ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:20:12.9792801+05:30 0HL7VFPDTRHHM [INF] Executed DbCommand (21ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:20:13.1166632+05:30 0HL7VFPDTRHHM [INF] Executed DbCommand (8ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-19T22:20:13.1657242+05:30 0HL7VFPDTRHHM [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:20:13.1877397+05:30 0HL7VFPDTRHHM [INF] Executed DbCommand (5ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-19T22:20:21.8614934+05:30 0HL7VFPDTRHHM [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T22:20:21.8765044+05:30 0HL7VFPDTRHHM [INF] Executed action "Aguila.Controllers.AccountController.ForgotPassword (Aguila)" in 14465.7075ms (afa2e885)
+2017-09-19T22:20:21.9545594+05:30 0HL7VFPDTRHHM [INF] Request finished in 14854.8436ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T22:20:35.0993460+05:30 0HL7VFPDTRHHN [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-19T22:20:35.1403750+05:30 0HL7VFPDTRHHN [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:20:35.1453782+05:30 0HL7VFPDTRHHN [INF] Handling request: /token (8c275dec)
+2017-09-19T22:20:35.2644626+05:30 0HL7VFPDTRHHN [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:20:35.2824753+05:30 0HL7VFPDTRHHN [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:20:35.3355127+05:30 0HL7VFPDTRHHN [WRN] Invalid password for user "52a4077e-f5fb-459d-9b6d-646ceaee44d2". (c2dce6c7)
+2017-09-19T22:20:35.3415169+05:30 0HL7VFPDTRHHN [WRN] User "52a4077e-f5fb-459d-9b6d-646ceaee44d2" failed to provide the correct password. (ec8d2479)
+2017-09-19T22:20:35.4425889+05:30 0HL7VFPDTRHHN [INF] Request finished in 317.886ms 400  (15c52c40)
+2017-09-19T22:22:39.2778754+05:30 0HL7VFPDTRHHO [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 72 (e5be5b71)
+2017-09-19T22:22:39.2863375+05:30 0HL7VFPDTRHHO [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:22:39.2893417+05:30 0HL7VFPDTRHHO [INF] Handling request: /token (8c275dec)
+2017-09-19T22:22:39.3183659+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:22:39.3378819+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:22:39.4899892+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T22:22:39.5190094+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T22:22:39.5740489+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T22:22:39.6080719+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T22:22:39.8532459+05:30 0HL7VFPDTRHHO [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-19T22:22:43.0008441+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:22:43.4671670+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-19T22:22:43.5041934+05:30 0HL7VFPDTRHHO [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-19T22:22:43.5452220+05:30 0HL7VFPDTRHHO [WRN] User "52a4077e-f5fb-459d-9b6d-646ceaee44d2" is already in role "User". (337e5c15)
+2017-09-19T22:22:43.6092672+05:30 0HL7VFPDTRHHO [INF] Request finished in 4330.9045ms 200 application/json (15c52c40)
+2017-09-19T22:47:55.5198978+05:30 0HL7VFPDTRHHP [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 69 (e5be5b71)
+2017-09-19T22:47:55.5319053+05:30 0HL7VFPDTRHHP [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:47:55.5359074+05:30 0HL7VFPDTRHHP [INF] Handling request: /token (8c275dec)
+2017-09-19T22:47:55.5899760+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:47:55.6059877+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:47:55.6300060+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T22:47:55.6406213+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T22:47:55.6509397+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T22:47:55.6599471+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T22:47:55.6839637+05:30 0HL7VFPDTRHHP [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-19T22:47:55.7186730+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:47:55.7517062+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-19T22:47:55.7627140+05:30 0HL7VFPDTRHHP [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-19T22:47:55.7697199+05:30 0HL7VFPDTRHHP [WRN] User "779e2a32-bbcd-4b92-8843-15676e9dcebe" is already in role "User". (337e5c15)
+2017-09-19T22:47:55.7947369+05:30 0HL7VFPDTRHHP [INF] Request finished in 271.2987ms 200 application/json (15c52c40)
+2017-09-19T22:48:17.9104699+05:30 0HL7VFPDTRHHQ [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-19T22:48:17.9224783+05:30 0HL7VFPDTRHHQ [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:48:17.9274819+05:30 0HL7VFPDTRHHQ [INF] Handling request: /token (8c275dec)
+2017-09-19T22:48:17.9404910+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:48:17.9655090+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:48:17.9895256+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T22:48:18.0015338+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T22:48:18.0135426+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T22:48:18.0285532+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T22:48:18.0375592+05:30 0HL7VFPDTRHHQ [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-19T22:48:18.0505691+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:48:18.0645789+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-19T22:48:18.0775878+05:30 0HL7VFPDTRHHQ [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-19T22:48:18.0845924+05:30 0HL7VFPDTRHHQ [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-19T22:48:18.1486379+05:30 0HL7VFPDTRHHQ [INF] Request finished in 220.9408ms 200 application/json (15c52c40)
+2017-09-19T22:48:29.3536154+05:30 0HL7VFPDTRHHR [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Situations/GetSituayionsByCHA/42,40/3/1 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-19T22:48:29.3646245+05:30 0HL7VFPDTRHHR [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:48:29.3796344+05:30 0HL7VFPDTRHHR [INF] Successfully validated the token. (60169667)
+2017-09-19T22:48:29.3866390+05:30 0HL7VFPDTRHHR [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T22:48:29.4216644+05:30 0HL7VFPDTRHHR [INF] Request finished in 67.9427ms 404  (15c52c40)
+2017-09-19T22:48:36.3679106+05:30 0HL7VFPDTRHHS [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Situations/GetSituayionsByCHA/42/3/1 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-19T22:48:36.3779170+05:30 0HL7VFPDTRHHS [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:48:36.3829208+05:30 0HL7VFPDTRHHS [INF] Successfully validated the token. (60169667)
+2017-09-19T22:48:36.3879244+05:30 0HL7VFPDTRHHS [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T22:48:36.6280945+05:30 0HL7VFPDTRHHS [INF] Request finished in 78.4838ms 404  (15c52c40)
+2017-09-19T22:49:00.0815988+05:30 0HL7VFPDTRHHT [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 69 (e5be5b71)
+2017-09-19T22:49:00.0926062+05:30 0HL7VFPDTRHHT [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:49:00.0976098+05:30 0HL7VFPDTRHHT [INF] Handling request: /token (8c275dec)
+2017-09-19T22:49:00.1096186+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:49:00.1266299+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:49:00.1546504+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T22:49:00.1676592+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T22:49:00.1786666+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T22:49:00.1906758+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T22:49:00.1996818+05:30 0HL7VFPDTRHHT [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-19T22:49:00.2106896+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:49:00.2447139+05:30 0HL7VFPDTRHHT [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-19T22:49:00.2517189+05:30 0HL7VFPDTRHHT [WRN] User "779e2a32-bbcd-4b92-8843-15676e9dcebe" is already in role "User". (337e5c15)
+2017-09-19T22:49:00.3137630+05:30 0HL7VFPDTRHHT [INF] Request finished in 198.6018ms 200 application/json (15c52c40)
+2017-09-19T22:49:15.8005574+05:30 0HL7VFPDTRHHU [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Situations/GetSituayionsByCHA/42/3/1 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-19T22:49:15.8095631+05:30 0HL7VFPDTRHHU [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:49:15.8125659+05:30 0HL7VFPDTRHHU [INF] Successfully validated the token. (60169667)
+2017-09-19T22:49:15.8162967+05:30 0HL7VFPDTRHHU [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T22:49:15.8403161+05:30 0HL7VFPDTRHHU [INF] Request finished in 43.2078ms 404  (15c52c40)
+2017-09-19T22:50:02.8764647+05:30 0HL7VFPDTRHHV [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Situations/GetSituationsByCHA/42/3/1 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-19T22:50:02.8844700+05:30 0HL7VFPDTRHHV [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:50:02.8884721+05:30 0HL7VFPDTRHHV [INF] Successfully validated the token. (60169667)
+2017-09-19T22:50:02.8914742+05:30 0HL7VFPDTRHHV [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T22:50:02.9184936+05:30 0HL7VFPDTRHHV [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-19T22:50:02.9645261+05:30 0HL7VFPDTRHHV [INF] Executing action method "Aguila.Controllers.SituationsController.GetSituationsByCHA (Aguila)" with arguments (["System.Int32[]", "3", "System.Int32[]"]) - ModelState is Valid (ba7f4ac2)
+2017-09-19T22:50:22.5774225+05:30 0HL7VFPDTRHHV [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T22:50:22.6264571+05:30 0HL7VFPDTRHHV [INF] Executed action "Aguila.Controllers.SituationsController.GetSituationsByCHA (Aguila)" in 19717.0834ms (afa2e885)
+2017-09-19T22:50:22.6344624+05:30 0HL7VFPDTRHHV [INF] Request finished in 19762.4271ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T22:50:51.1440319+05:30 0HL7VFPDTRHI0 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Situations/GetSituationsByCHA/42,40/3/1 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-19T22:50:51.1790570+05:30 0HL7VFPDTRHI0 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:50:51.1830602+05:30 0HL7VFPDTRHI0 [INF] Successfully validated the token. (60169667)
+2017-09-19T22:50:51.1880633+05:30 0HL7VFPDTRHI0 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-19T22:50:51.2110789+05:30 0HL7VFPDTRHI0 [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-19T22:50:51.2711363+05:30 0HL7VFPDTRHI0 [INF] Executing action method "Aguila.Controllers.SituationsController.GetSituationsByCHA (Aguila)" with arguments (["System.Int32[]", "3", "System.Int32[]"]) - ModelState is Invalid (ba7f4ac2)
+2017-09-19T22:51:02.5225099+05:30 0HL7VFPDTRHI0 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-19T22:51:02.5935608+05:30 0HL7VFPDTRHI0 [INF] Executed action "Aguila.Controllers.SituationsController.GetSituationsByCHA (Aguila)" in 11377.7218ms (afa2e885)
+2017-09-19T22:51:02.6135745+05:30 0HL7VFPDTRHI0 [INF] Request finished in 11461.395ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-19T22:54:58.8087389+05:30 0HL7VFPDTRHI1 [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-19T22:54:58.8167439+05:30 0HL7VFPDTRHI1 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-19T22:54:58.8242312+05:30 0HL7VFPDTRHI1 [INF] Handling request: /token (8c275dec)
+2017-09-19T22:54:59.1798764+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:54:59.3738645+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (175ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:54:59.6170272+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (196ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-19T22:54:59.8144240+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (178ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-09-19T22:54:59.9275657+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (41ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-09-19T22:55:00.0096226+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (57ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-19T22:55:00.0376430+05:30 0HL7VFPDTRHI1 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-19T22:55:00.0916808+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (39ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-19T22:55:00.2858363+05:30 0HL7VFPDTRHI1 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-19T22:55:00.2908388+05:30 0HL7VFPDTRHI1 [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-19T22:55:00.3839041+05:30 0HL7VFPDTRHI1 [INF] Request finished in 1535.5849ms 200 application/json (15c52c40)

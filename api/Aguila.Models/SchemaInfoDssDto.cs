@@ -1,0 +1,9 @@
+﻿namespace Aguila.DAL
+{
+    public partial class SchemaInfoDssDto
+    {
+        public int SchemaMajorVersion { get; set; }
+        public int SchemaMinorVersion { get; set; }
+        public string SchemaExtendedInfo { get; set; }
+    }
+}

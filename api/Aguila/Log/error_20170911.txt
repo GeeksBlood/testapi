@@ -1,0 +1,797 @@
+2017-09-11T19:33:50.4010400+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T19:33:52.2858718+05:30 0HL7P3NNDQ7AV [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T19:33:57.2039850+05:30 0HL7P3NNDQ7AV [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T19:33:57.2650279+05:30 0HL7P3NNDQ7AV [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T19:33:57.5552296+05:30 0HL7P3NNDQ7AV [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 358.1565ms (afa2e885)
+2017-09-11T19:33:59.7378161+05:30 0HL7P3NNDQ7AV [INF] Request finished in 7520.3363ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T19:34:10.4786983+05:30 0HL7P3NNDQ7B0 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 77 (e5be5b71)
+2017-09-11T19:34:13.6214453+05:30 0HL7P3NNDQ7B0 [INF] Successfully validated the token. (60169667)
+2017-09-11T19:34:13.6444611+05:30 0HL7P3NNDQ7B0 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T19:34:13.6684785+05:30 0HL7P3NNDQ7B0 [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 3.3931ms (afa2e885)
+2017-09-11T19:34:15.2360463+05:30 0HL7P3NNDQ7B0 [INF]    at Microsoft.Extensions.DependencyInjection.ServiceLookup.Service.PopulateCallSites(ServiceProvider provider, ISet`1 callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.Service.CreateCallSite(ServiceProvider provider, ISet`1 callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetResolveCallSite(IService service, ISet`1 callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetServiceCallSite(Type serviceType, ISet`1 callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType, ServiceProvider serviceProvider)
+   at System.Collections.Concurrent.ConcurrentDictionaryExtensions.GetOrAdd[TKey,TValue,TArg](ConcurrentDictionary`2 dictionary, TKey key, Func`3 valueFactory, TArg arg)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.Controllers.DefaultControllerFactory.CreateController(ControllerContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Aguila.ErrorHandlingMiddleware.<Invoke>d__3.MoveNext() in D:\Aguila\TFS\Aguila\ErrorHandlingMiddleware.cs:line 25 (e6c639db)
+2017-09-11T19:34:22.6207105+05:30 0HL7P3NNDQ7B0 [INF] Request finished in 12118.5121ms 500 application/json (15c52c40)
+2017-09-11T19:40:20.5529198+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T19:40:21.3995415+05:30 0HL7P3RBCLLVN [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T19:40:29.1217832+05:30 0HL7P3RBCLLVN [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T19:40:29.1968350+05:30 0HL7P3RBCLLVN [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T19:40:29.5771030+05:30 0HL7P3RBCLLVN [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 468.3089ms (afa2e885)
+2017-09-11T19:40:29.6781745+05:30 0HL7P3RBCLLVN [INF] Request finished in 8310.2753ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T19:40:36.6430794+05:30 0HL7P3RBCLLVO [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 77 (e5be5b71)
+2017-09-11T19:40:40.3656721+05:30 0HL7P3RBCLLVO [INF] Successfully validated the token. (60169667)
+2017-09-11T19:40:40.3766795+05:30 0HL7P3RBCLLVO [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T19:40:40.3986957+05:30 0HL7P3RBCLLVO [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 2.7605ms (afa2e885)
+2017-09-11T19:41:09.8295104+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T19:41:10.5700317+05:30 0HL7P3RQ1JAHK [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T19:41:18.5421016+05:30 0HL7P3RQ1JAHK [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T19:41:18.6021436+05:30 0HL7P3RQ1JAHK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T19:41:18.8523200+05:30 0HL7P3RQ1JAHK [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 348.0125ms (afa2e885)
+2017-09-11T19:41:18.9653993+05:30 0HL7P3RQ1JAHK [INF] Request finished in 8415.95ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T19:41:30.1251411+05:30 0HL7P3RQ1JAHL [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 77 (e5be5b71)
+2017-09-11T19:41:32.5784965+05:30 0HL7P3RQ1JAHL [INF] Successfully validated the token. (60169667)
+2017-09-11T19:41:32.5905046+05:30 0HL7P3RQ1JAHL [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T19:41:32.6195254+05:30 0HL7P3RQ1JAHL [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 2.6336ms (afa2e885)
+2017-09-11T19:45:09.5627076+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T19:45:10.2541957+05:30 0HL7P3U1FE1H8 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T19:45:14.3646731+05:30 0HL7P3U1FE1H8 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T19:45:14.4117073+05:30 0HL7P3U1FE1H8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T19:45:14.6468728+05:30 0HL7P3U1FE1H8 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 336.7902ms (afa2e885)
+2017-09-11T19:45:14.7469433+05:30 0HL7P3U1FE1H8 [INF] Request finished in 4486.5643ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T19:45:20.0421056+05:30 0HL7P3U1FE1H9 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 77 (e5be5b71)
+2017-09-11T19:45:22.7774030+05:30 0HL7P3U1FE1H9 [INF] Successfully validated the token. (60169667)
+2017-09-11T19:45:22.7894108+05:30 0HL7P3U1FE1H9 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T19:45:22.8204329+05:30 0HL7P3U1FE1H9 [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 3.1396ms (afa2e885)
+2017-09-11T19:45:29.0994393+05:30 0HL7P3U1FE1H9 [INF]    at Microsoft.Extensions.DependencyInjection.ServiceLookup.Service.PopulateCallSites(ServiceProvider provider, ISet`1 callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.Service.CreateCallSite(ServiceProvider provider, ISet`1 callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetResolveCallSite(IService service, ISet`1 callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetServiceCallSite(Type serviceType, ISet`1 callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType, ServiceProvider serviceProvider)
+   at System.Collections.Concurrent.ConcurrentDictionaryExtensions.GetOrAdd[TKey,TValue,TArg](ConcurrentDictionary`2 dictionary, TKey key, Func`3 valueFactory, TArg arg)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.TypeActivatorCache.CreateInstance[TInstance](IServiceProvider serviceProvider, Type implementationType)
+   at Microsoft.AspNetCore.Mvc.Controllers.DefaultControllerFactory.CreateController(ControllerContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Aguila.ErrorHandlingMiddleware.<Invoke>d__3.MoveNext() in D:\Aguila\TFS\Aguila\ErrorHandlingMiddleware.cs:line 25 (e6c639db)
+2017-09-11T19:45:34.7839738+05:30 0HL7P3U1FE1H9 [INF] Request finished in 14730.4266ms 500 application/json (15c52c40)
+2017-09-11T19:48:42.7696813+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T19:48:44.0305754+05:30 0HL7P40164PUE [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T19:49:04.8615682+05:30 0HL7P40164PUE [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T19:49:04.9226115+05:30 0HL7P40164PUE [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T19:49:05.2378334+05:30 0HL7P40164PUE [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 421.711ms (afa2e885)
+2017-09-11T19:49:05.4870082+05:30 0HL7P40164PUE [INF] Request finished in 21482.0263ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T19:49:11.9396232+05:30 0HL7P40164PUF [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 77 (e5be5b71)
+2017-09-11T19:49:14.4773313+05:30 0HL7P40164PUF [INF] Successfully validated the token. (60169667)
+2017-09-11T19:49:14.4893394+05:30 0HL7P40164PUF [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T19:49:16.3656920+05:30 0HL7P40164PUF [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T19:49:23.6975817+05:30 0HL7P40164PUF [INF] Executed DbCommand (93ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[AccountActive], [e].[Address], [e].[Age], [e].[BallFlight], [e].[City], [e].[ClubType], [e].[ConcurrencyStamp], [e].[DatePaid], [e].[DriverDistance], [e].[Email], [e].[EmailConfirmed], [e].[HandicapId], [e].[Height], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[LockoutEndDateUtc], [e].[Name], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Self], [e].[SevenIronDistance], [e].[State], [e].[Twitter], [e].[TwoFactorEnabled], [e].[UserName], [e].[VoiceOver], [e].[Weight], [e].[Zip]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-09-11T20:09:13.8229540+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T20:09:15.1769068+05:30 0HL7P4BG3AC6N [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T20:09:21.0263574+05:30 0HL7P4BG3AC6N [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:09:21.0873993+05:30 0HL7P4BG3AC6N [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T20:09:21.4286402+05:30 0HL7P4BG3AC6N [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 444.0821ms (afa2e885)
+2017-09-11T20:09:21.4976892+05:30 0HL7P4BG3AC6N [INF] Request finished in 6464.6732ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T20:09:27.1144864+05:30 0HL7P4BG3AC6O [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 77 (e5be5b71)
+2017-09-11T20:09:33.0297074+05:30 0HL7P4BG3AC6O [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:09:40.9479247+05:30 0HL7P4BG3AC6O [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 11349.3054ms (afa2e885)
+2017-09-11T20:09:50.5661705+05:30 0HL7P4BG3AC6O [INF]    at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Aguila.Service.AccountService.<ChangePassword>d__12.MoveNext() in D:\Aguila\TFS\Aguila.Service\AccountService.cs:line 65
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Aguila.Controllers.AccountController.<ChangePassword>d__3.MoveNext() in D:\Aguila\TFS\Aguila\Controllers\AccountController.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Aguila.ErrorHandlingMiddleware.<Invoke>d__3.MoveNext() in D:\Aguila\TFS\Aguila\ErrorHandlingMiddleware.cs:line 25 (8a535d13)
+2017-09-11T20:09:50.7022663+05:30 0HL7P4BG3AC6O [INF] Request finished in 23582.314ms 500 application/json (15c52c40)
+2017-09-11T20:10:20.2206613+05:30 0HL7P4BG3AC6P [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 77 (e5be5b71)
+2017-09-11T20:10:24.9383618+05:30 0HL7P4BG3AC6P [INF] Successfully validated the token. (60169667)
+2017-09-11T20:10:24.9503709+05:30 0HL7P4BG3AC6P [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T20:10:26.8066766+05:30 0HL7P4BG3AC6P [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:10:36.8987701+05:30 0HL7P4BG3AC6P [INF] Executed DbCommand (91ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T20:10:42.8109073+05:30 0HL7P4BG3AC6P [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T20:10:43.0376375+05:30 0HL7P4BG3AC6P [INF] Executed DbCommand (15ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-11T20:10:50.0298378+05:30 0HL7P4BG3AC6P [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-09-11T20:10:50.0358424+05:30 0HL7P4BG3AC6P [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 25074.1234ms (afa2e885)
+2017-09-11T20:10:50.0888811+05:30 0HL7P4BG3AC6P [INF] Request finished in 29860.8184ms 200  (15c52c40)
+2017-09-11T20:12:15.3517687+05:30 0HL7P4BG3AC6Q [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 79 (e5be5b71)
+2017-09-11T20:20:58.8707675+05:30 0HL7P4BG3AC6Q [INF] Successfully validated the token. (60169667)
+2017-09-11T20:20:58.8857771+05:30 0HL7P4BG3AC6Q [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T20:20:58.9007883+05:30 0HL7P4BG3AC6Q [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:21:14.5555354+05:30 0HL7P4BG3AC6Q [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 15659.5062ms (afa2e885)
+2017-09-11T20:21:18.4029305+05:30 0HL7P4BG3AC6Q [INF]    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.FindByNameAsync(String normalizedUserName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Aguila.Service.AccountService.<ChangePassword>d__12.MoveNext() in D:\Aguila\TFS\Aguila.Service\AccountService.cs:line 65
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Aguila.Controllers.AccountController.<ChangePassword>d__3.MoveNext() in D:\Aguila\TFS\Aguila\Controllers\AccountController.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Aguila.ErrorHandlingMiddleware.<Invoke>d__3.MoveNext() in D:\Aguila\TFS\Aguila\ErrorHandlingMiddleware.cs:line 25 (e20c4574)
+2017-09-11T20:21:18.4499643+05:30 0HL7P4BG3AC6Q [INF] Request finished in 543126.0529ms 500 application/json (15c52c40)
+2017-09-11T20:22:04.6529202+05:30 0HL7P4BG3AC6R [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 79 (e5be5b71)
+2017-09-11T20:22:06.6052144+05:30 0HL7P4BG3AC6R [INF] Successfully validated the token. (60169667)
+2017-09-11T20:22:06.6092220+05:30 0HL7P4BG3AC6R [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T20:22:06.6192240+05:30 0HL7P4BG3AC6R [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:22:10.3343184+05:30 0HL7P4BG3AC6R [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T20:22:21.7957701+05:30 0HL7P4BG3AC6R [WRN] Change password failed for user "1e0dc448-f005-46cc-8897-5e7600fbca2c". (4e3cf999)
+2017-09-11T20:22:46.3804029+05:30 0HL7P4BG3AC6R [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-11T20:22:46.3854060+05:30 0HL7P4BG3AC6R [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 39767.1248ms (afa2e885)
+2017-09-11T20:22:46.4364433+05:30 0HL7P4BG3AC6R [INF] Request finished in 41747.8585ms 400  (15c52c40)
+2017-09-11T20:22:54.1181519+05:30 0HL7P4BG3AC6S [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 80 (e5be5b71)
+2017-09-11T20:22:56.3484949+05:30 0HL7P4BG3AC6S [INF] Successfully validated the token. (60169667)
+2017-09-11T20:22:56.3534988+05:30 0HL7P4BG3AC6S [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T20:22:56.3675090+05:30 0HL7P4BG3AC6S [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:22:59.6761269+05:30 0HL7P4BG3AC6S [INF] Executed DbCommand (328ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T20:23:00.4127258+05:30 0HL7P4BG3AC6S [INF] Executed DbCommand (56ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T20:23:00.5280127+05:30 0HL7P4BG3AC6S [INF] Executed DbCommand (20ms) [Parameters=[@p33='?' (Size = 450), @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p34='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 256), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 256), @p30='?', @p31='?' (Size = 4000), @p32='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [AccountActive] = @p1, [Address] = @p2, [Age] = @p3, [BallFlight] = @p4, [City] = @p5, [ClubType] = @p6, [ConcurrencyStamp] = @p7, [DatePaid] = @p8, [DriverDistance] = @p9, [Email] = @p10, [EmailConfirmed] = @p11, [HandicapId] = @p12, [Height] = @p13, [LockoutEnabled] = @p14, [LockoutEnd] = @p15, [LockoutEndDateUtc] = @p16, [Name] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [Self] = @p24, [SevenIronDistance] = @p25, [State] = @p26, [Twitter] = @p27, [TwoFactorEnabled] = @p28, [UserName] = @p29, [VoiceOver] = @p30, [Weight] = @p31, [Zip] = @p32
+WHERE [Id] = @p33 AND [ConcurrencyStamp] = @p34;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-11T20:23:05.7672273+05:30 0HL7P4BG3AC6S [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-09-11T20:23:05.7742326+05:30 0HL7P4BG3AC6S [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 9409.9574ms (afa2e885)
+2017-09-11T20:23:05.8182632+05:30 0HL7P4BG3AC6S [INF] Request finished in 11703.6972ms 200  (15c52c40)
+2017-09-11T20:23:10.4905296+05:30 0HL7P4BG3AC6T [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 80 (e5be5b71)
+2017-09-11T20:23:18.1099383+05:30 0HL7P4BG3AC6T [INF] Successfully validated the token. (60169667)
+2017-09-11T20:23:18.1159418+05:30 0HL7P4BG3AC6T [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T20:23:18.1239471+05:30 0HL7P4BG3AC6T [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:23:22.0759369+05:30 0HL7P4BG3AC6T [INF] Executed DbCommand (25ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T20:23:22.3421246+05:30 0HL7P4BG3AC6T [WRN] Change password failed for user "1e0dc448-f005-46cc-8897-5e7600fbca2c". (4e3cf999)
+2017-09-11T20:23:28.6406832+05:30 0HL7P4BG3AC6T [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-09-11T20:23:28.6476881+05:30 0HL7P4BG3AC6T [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 10521.1632ms (afa2e885)
+2017-09-11T20:23:28.6757075+05:30 0HL7P4BG3AC6T [INF] Request finished in 18187.3446ms 400  (15c52c40)
+2017-09-11T20:23:47.1457478+05:30 0HL7P4BG3AC6U [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 80 (e5be5b71)
+2017-09-11T20:23:50.6983929+05:30 0HL7P4BG3AC6U [INF] Successfully validated the token. (60169667)
+2017-09-11T20:23:50.7033964+05:30 0HL7P4BG3AC6U [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T20:23:50.7114020+05:30 0HL7P4BG3AC6U [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T20:23:56.6319009+05:30 0HL7P4BG3AC6U [INF] Executed DbCommand (24ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T21:56:32.4768376+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T21:56:33.2699542+05:30 0HL7P67EPMOS0 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T21:56:37.0552574+05:30 0HL7P67EPMOS0 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T21:56:37.1012898+05:30 0HL7P67EPMOS0 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T21:56:37.3894924+05:30 0HL7P67EPMOS0 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 386.4922ms (afa2e885)
+2017-09-11T21:56:37.4265181+05:30 0HL7P67EPMOS0 [INF] Request finished in 4201.2755ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T21:57:46.9951912+05:30 0HL7P67EPMOS1 [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 68 (e5be5b71)
+2017-09-11T21:57:50.5012007+05:30 0HL7P67EPMOS1 [INF] Handling request: /token (8c275dec)
+2017-09-11T21:57:52.2954634+05:30 0HL7P67EPMOS1 [INF] Executed DbCommand (102ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T21:57:52.5346797+05:30 0HL7P67EPMOS1 [WRN] Invalid password for user "1e0dc448-f005-46cc-8897-5e7600fbca2c". (c2dce6c7)
+2017-09-11T21:57:52.5396829+05:30 0HL7P67EPMOS1 [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" failed to provide the correct password. (ec8d2479)
+2017-09-11T21:57:52.9209506+05:30 0HL7P67EPMOS1 [INF] Request finished in 5671.7361ms 400  (15c52c40)
+2017-09-11T21:58:00.2065865+05:30 0HL7P67EPMOS2 [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-11T21:58:00.2215961+05:30 0HL7P67EPMOS2 [INF] Handling request: /token (8c275dec)
+2017-09-11T21:58:00.2576218+05:30 0HL7P67EPMOS2 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T21:58:00.7702643+05:30 0HL7P67EPMOS2 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-11T21:58:00.8313066+05:30 0HL7P67EPMOS2 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-11T21:58:00.8973535+05:30 0HL7P67EPMOS2 [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-11T21:58:01.2536039+05:30 0HL7P67EPMOS2 [INF] Request finished in 844.8563ms 200 application/json (15c52c40)
+2017-09-11T21:58:28.7135208+05:30 0HL7P67EPMOS3 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T21:58:28.7765652+05:30 0HL7P67EPMOS3 [INF] Authorization failed for user: null. (a4ab1676)
+2017-09-11T21:58:28.7815684+05:30 0HL7P67EPMOS3 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-09-11T21:58:28.7905750+05:30 0HL7P67EPMOS3 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-09-11T21:58:28.8225972+05:30 0HL7P67EPMOS3 [INF] AuthenticationScheme: "Cookie" was challenged. (d45f1f38)
+2017-09-11T21:58:28.8286022+05:30 0HL7P67EPMOS3 [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 69.4564ms (afa2e885)
+2017-09-11T21:58:28.8416106+05:30 0HL7P67EPMOS3 [INF] Request finished in 132.6966ms 302  (15c52c40)
+2017-09-11T21:58:28.8686293+05:30 0HL7P67EPMOS4 [INF] Request starting HTTP/1.1 GET http://localhost:62336/Account/Login?ReturnUrl=%2Fapi%2FAnswers   (e5be5b71)
+2017-09-11T21:58:28.9346761+05:30 0HL7P67EPMOS4 [INF] Request finished in 58.3487ms 404  (15c52c40)
+2017-09-11T21:58:39.8840590+05:30 0HL7P67EPMOS5 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T21:58:39.9621132+05:30 0HL7P67EPMOS5 [INF] Successfully validated the token. (60169667)
+2017-09-11T21:58:39.9711196+05:30 0HL7P67EPMOS5 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T21:58:39.9861301+05:30 0HL7P67EPMOS5 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-11T21:58:39.9911333+05:30 0HL7P67EPMOS5 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-11T21:58:39.9971379+05:30 0HL7P67EPMOS5 [INF] Executing action method "Aguila.Controllers.AnswersController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T21:58:43.9647736+05:30 0HL7P67EPMOS5 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T21:58:44.6002216+05:30 0HL7P67EPMOS5 [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 4614.8454ms (afa2e885)
+2017-09-11T21:58:44.6112290+05:30 0HL7P67EPMOS5 [INF] Request finished in 4755.2501ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T21:58:56.2229204+05:30 0HL7P67EPMOS6 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T21:58:56.2929690+05:30 0HL7P67EPMOS6 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdW1pdDFAY2hldHUuY29tIiwianRpIjoiNWVjN2RhNjAtNmUwOC00YjY5LTg4Y2YtNDQxODhlNWU2Y2E1IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJzdW1pdDFAY2hldHUuY29tIiwibmJmIjoxNTA1MTQ3MjgwLCJleHAiOjE1MDUyMzM2ODAsImlzcyI6IkFndWlsYVRlY2hub2xvZ2llcyIsImF1ZCI6IkFndWlsYVRlY2hub2xvZ2llc0dvbGZUcmFpbmVyIn0.-ymlr4g4yjYsl6JwCdYgUwjnL1Rm3iuilXIsSOYuLJ41". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{"alg":"HS256","typ":"JWT"}.{"sub":"sumit1@chetu.com","jti":"5ec7da60-6e08-4b69-88cf-44188e5e6ca5","http://schemas.microsoft.com/ws/2008/06/identity/claims/role":"Administrator","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name":"sumit1@chetu.com","nbf":1505147280,"exp":1505233680,"iss":"AguilaTechnologies","aud":"AguilaTechnologiesGolfTrainer"}'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.<HandleAuthenticateAsync>d__1.MoveNext()
+2017-09-11T21:58:56.3009764+05:30 0HL7P67EPMOS6 [INF] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{\"alg\":\"HS256\",\"typ\":\"JWT\"}.{\"sub\":\"sumit1@chetu.com\",\"jti\":\"5ec7da60-6e08-4b69-88cf-44188e5e6ca5\",\"http://schemas.microsoft.com/ws/2008/06/identity/claims/role\":\"Administrator\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\":\"sumit1@chetu.com\",\"nbf\":1505147280,\"exp\":1505233680,\"iss\":\"AguilaTechnologies\",\"aud\":\"AguilaTechnologiesGolfTrainer\"}'." (48071232)
+2017-09-11T21:58:56.3329986+05:30 0HL7P67EPMOS6 [INF] Authorization failed for user: null. (a4ab1676)
+2017-09-11T21:58:56.3380011+05:30 0HL7P67EPMOS6 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-09-11T21:58:56.3430046+05:30 0HL7P67EPMOS6 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-09-11T21:58:56.3480081+05:30 0HL7P67EPMOS6 [INF] AuthenticationScheme: "Cookie" was challenged. (d45f1f38)
+2017-09-11T21:58:56.3540123+05:30 0HL7P67EPMOS6 [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 21.5753ms (afa2e885)
+2017-09-11T21:58:56.3750275+05:30 0HL7P67EPMOS6 [INF] Request finished in 159.6439ms 302  (15c52c40)
+2017-09-11T21:58:56.3830331+05:30 0HL7P67EPMOS7 [INF] Request starting HTTP/1.1 GET http://localhost:62336/Account/Login?ReturnUrl=%2Fapi%2FAnswers%2F5   (e5be5b71)
+2017-09-11T21:58:56.3970433+05:30 0HL7P67EPMOS7 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdW1pdDFAY2hldHUuY29tIiwianRpIjoiNWVjN2RhNjAtNmUwOC00YjY5LTg4Y2YtNDQxODhlNWU2Y2E1IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJzdW1pdDFAY2hldHUuY29tIiwibmJmIjoxNTA1MTQ3MjgwLCJleHAiOjE1MDUyMzM2ODAsImlzcyI6IkFndWlsYVRlY2hub2xvZ2llcyIsImF1ZCI6IkFndWlsYVRlY2hub2xvZ2llc0dvbGZUcmFpbmVyIn0.-ymlr4g4yjYsl6JwCdYgUwjnL1Rm3iuilXIsSOYuLJ41". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{"alg":"HS256","typ":"JWT"}.{"sub":"sumit1@chetu.com","jti":"5ec7da60-6e08-4b69-88cf-44188e5e6ca5","http://schemas.microsoft.com/ws/2008/06/identity/claims/role":"Administrator","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name":"sumit1@chetu.com","nbf":1505147280,"exp":1505233680,"iss":"AguilaTechnologies","aud":"AguilaTechnologiesGolfTrainer"}'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.<HandleAuthenticateAsync>d__1.MoveNext()
+2017-09-11T21:58:56.4250630+05:30 0HL7P67EPMOS7 [INF] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{\"alg\":\"HS256\",\"typ\":\"JWT\"}.{\"sub\":\"sumit1@chetu.com\",\"jti\":\"5ec7da60-6e08-4b69-88cf-44188e5e6ca5\",\"http://schemas.microsoft.com/ws/2008/06/identity/claims/role\":\"Administrator\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\":\"sumit1@chetu.com\",\"nbf\":1505147280,\"exp\":1505233680,\"iss\":\"AguilaTechnologies\",\"aud\":\"AguilaTechnologiesGolfTrainer\"}'." (48071232)
+2017-09-11T21:58:56.4510803+05:30 0HL7P67EPMOS7 [INF] Request finished in 67.9381ms 404  (15c52c40)
+2017-09-11T21:59:05.2432280+05:30 0HL7P67EPMOS8 [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/Logout  0 (e5be5b71)
+2017-09-11T21:59:05.2682450+05:30 0HL7P67EPMOS8 [INF] Executing action method "Aguila.Controllers.AccountController.Logout (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T21:59:19.6806542+05:30 0HL7P67EPMOS8 [INF] Executed action "Aguila.Controllers.AccountController.Logout (Aguila)" in 14417.1847ms (afa2e885)
+2017-09-11T22:40:03.5245149+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T22:40:04.2970783+05:30 0HL7P6VOUE2QI [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/Logout  0 (e5be5b71)
+2017-09-11T22:40:04.3000804+05:30 0HL7P6VOUE2QH [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T22:40:05.1687151+05:30 0HL7P6VOUE2QH [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:40:05.1667123+05:30 0HL7P6VOUE2QI [INF] Executing action method "Aguila.Controllers.AccountController.Logout (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:40:16.2594217+05:30 0HL7P6VOUE2QH [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T22:40:16.3194632+05:30 0HL7P6VOUE2QI [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2017-09-11T22:40:16.3264685+05:30 0HL7P6VOUE2QI [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-09-11T22:40:16.3324731+05:30 0HL7P6VOUE2QI [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2017-09-11T22:40:16.3464833+05:30 0HL7P6VOUE2QI [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-09-11T22:40:16.3654960+05:30 0HL7P6VOUE2QI [INF] Executed action "Aguila.Controllers.AccountController.Logout (Aguila)" in 11277.7093ms (afa2e885)
+2017-09-11T22:40:16.5366168+05:30 0HL7P6VOUE2QH [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 11367.284ms (afa2e885)
+2017-09-11T22:40:16.6046650+05:30 0HL7P6VOUE2QH [INF] Request finished in 12344.0583ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T22:40:16.6356862+05:30 0HL7P6VOUE2QI [INF] Request finished in 12215.0104ms 200  (15c52c40)
+2017-09-11T22:40:23.2445938+05:30 0HL7P6VOUE2QJ [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/ChangePassword application/x-www-form-urlencoded 80 (e5be5b71)
+2017-09-11T22:40:23.4087090+05:30 0HL7P6VOUE2QJ [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdW1pdDFAY2hldHUuY29tIiwianRpIjoiZGEwOTM1NzQtZWIzZC00NDAzLThjMmYtZGQ0MDBiOThiZGQ3IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJzdW1pdDFAY2hldHUuY29tIiwibmJmIjoxNTA1MTQxNTEyLCJleHAiOjE1MDUxNDUxMTIsImlzcyI6IkFndWlsYVRlY2hub2xvZ2llcyIsImF1ZCI6IkFndWlsYVRlY2hub2xvZ2llc0dvbGZUcmFpbmVyIn0.mB-9vMRVKt5cxM9XZndkLN0DeDTboAMDp6IVUsflAKc". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '09/11/2017 15:51:52'
+Current time: '09/11/2017 17:10:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.<HandleAuthenticateAsync>d__1.MoveNext()
+2017-09-11T22:40:23.4167149+05:30 0HL7P6VOUE2QJ [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '09/11/2017 15:51:52'
+Current time: '09/11/2017 17:10:23'." (48071232)
+2017-09-11T22:40:23.5998541+05:30 0HL7P6VOUE2QJ [INF] Executing action method "Aguila.Controllers.AccountController.ChangePassword (Aguila)" with arguments (["Aguila.Models.ChangePasswordBindingModel"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:40:26.0725869+05:30 0HL7P6VOUE2QJ [INF] Executed action "Aguila.Controllers.AccountController.ChangePassword (Aguila)" in 2639.3346ms (afa2e885)
+2017-09-11T22:40:26.8719421+05:30 0HL7P6VOUE2QJ [INF]    at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Aguila.Service.AccountService.<ChangePassword>d__12.MoveNext() in D:\Aguila\TFS\Aguila.Service\AccountService.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Aguila.Controllers.AccountController.<ChangePassword>d__3.MoveNext() in D:\Aguila\TFS\Aguila\Controllers\AccountController.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Aguila.ErrorHandlingMiddleware.<Invoke>d__3.MoveNext() in D:\Aguila\TFS\Aguila\ErrorHandlingMiddleware.cs:line 25 (2f530c2b)
+2017-09-11T22:40:26.9780171+05:30 0HL7P6VOUE2QJ [INF] Request finished in 3737.4829ms 500 application/json (15c52c40)
+2017-09-11T22:40:34.7072993+05:30 0HL7P6VOUE2QK [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-11T22:40:34.7323173+05:30 0HL7P6VOUE2QK [INF] Handling request: /token (8c275dec)
+2017-09-11T22:40:36.1803328+05:30 0HL7P6VOUE2QK [INF] Executed DbCommand (87ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T22:40:36.9148184+05:30 0HL7P6VOUE2QK [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-11T22:40:36.9839009+05:30 0HL7P6VOUE2QK [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-11T22:40:37.0289333+05:30 0HL7P6VOUE2QK [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-11T22:40:37.0719639+05:30 0HL7P6VOUE2QK [INF] Request finished in 2385.5123ms 200 application/json (15c52c40)
+2017-09-11T22:40:54.6505028+05:30 0HL7P6VOUE2QL [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/Logout  0 (e5be5b71)
+2017-09-11T22:40:54.6685141+05:30 0HL7P6VOUE2QL [INF] Successfully validated the token. (60169667)
+2017-09-11T22:40:54.6785225+05:30 0HL7P6VOUE2QL [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:40:54.6905299+05:30 0HL7P6VOUE2QL [INF] Executing action method "Aguila.Controllers.AccountController.Logout (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:43:21.9543498+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T22:43:22.6048310+05:30 0HL7P71K1JSL6 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T22:43:23.2883117+05:30 0HL7P71K1JSL6 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:43:23.3403477+05:30 0HL7P71K1JSL6 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T22:43:23.5802184+05:30 0HL7P71K1JSL6 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 333.1404ms (afa2e885)
+2017-09-11T22:43:23.6852924+05:30 0HL7P71K1JSL6 [INF] Request finished in 1105.2025ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T22:43:28.2273964+05:30 0HL7P71K1JSL7 [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-11T22:43:28.2454091+05:30 0HL7P71K1JSL7 [INF] Handling request: /token (8c275dec)
+2017-09-11T22:43:29.7682913+05:30 0HL7P71K1JSL7 [INF] Executed DbCommand (97ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T22:43:30.4669253+05:30 0HL7P71K1JSL7 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-11T22:43:30.5313827+05:30 0HL7P71K1JSL7 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-11T22:43:30.5754150+05:30 0HL7P71K1JSL7 [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-11T22:43:30.6985024+05:30 0HL7P71K1JSL7 [INF] Request finished in 2465.2113ms 200 application/json (15c52c40)
+2017-09-11T22:43:51.2835563+05:30 0HL7P71K1JSL8 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:43:51.3616122+05:30 0HL7P71K1JSL8 [INF] Successfully validated the token. (60169667)
+2017-09-11T22:43:51.3716176+05:30 0HL7P71K1JSL8 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:43:51.4106553+05:30 0HL7P71K1JSL8 [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-11T22:43:51.4156592+05:30 0HL7P71K1JSL8 [INF] Authorization failed for user: "sumit1@chetu.com". (a4ab1676)
+2017-09-11T22:43:51.4196620+05:30 0HL7P71K1JSL8 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-09-11T22:43:51.4266563+05:30 0HL7P71K1JSL8 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-09-11T22:43:51.4526750+05:30 0HL7P71K1JSL8 [INF] AuthenticationScheme: "Cookie" was challenged. (d45f1f38)
+2017-09-11T22:43:51.4556771+05:30 0HL7P71K1JSL8 [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 61.549ms (afa2e885)
+2017-09-11T22:43:51.4676859+05:30 0HL7P71K1JSL8 [INF] Request finished in 185.1088ms 302  (15c52c40)
+2017-09-11T22:43:51.4736901+05:30 0HL7P71K1JSL9 [INF] Request starting HTTP/1.1 GET http://localhost:62336/Account/Login?ReturnUrl=%2Fapi%2FAnswers%2F5   (e5be5b71)
+2017-09-11T22:43:51.4796943+05:30 0HL7P71K1JSL9 [INF] Successfully validated the token. (60169667)
+2017-09-11T22:43:51.4836968+05:30 0HL7P71K1JSL9 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:43:51.5137183+05:30 0HL7P71K1JSL9 [INF] Request finished in 38.8771ms 404  (15c52c40)
+2017-09-11T22:44:42.8439008+05:30 0HL7P71K1JSLA [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 70 (e5be5b71)
+2017-09-11T22:44:42.8569110+05:30 0HL7P71K1JSLA [INF] Handling request: /token (8c275dec)
+2017-09-11T22:44:42.8809272+05:30 0HL7P71K1JSLA [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T22:44:47.5571506+05:30 0HL7P71K1JSLA [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-11T22:44:47.5701590+05:30 0HL7P71K1JSLA [WRN] User "1e0dc448-f005-46cc-8897-5e7600fbca2c" is already in role "Administrator". (337e5c15)
+2017-09-11T22:44:47.5981784+05:30 0HL7P71K1JSLA [INF] Request finished in 4768.0992ms 200 application/json (15c52c40)
+2017-09-11T22:44:59.6401228+05:30 0HL7P71K1JSLB [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:44:59.6611366+05:30 0HL7P71K1JSLB [INF] Successfully validated the token. (60169667)
+2017-09-11T22:44:59.6641390+05:30 0HL7P71K1JSLB [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:44:59.6781482+05:30 0HL7P71K1JSLB [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-11T22:44:59.6812766+05:30 0HL7P71K1JSLB [INF] Authorization failed for user: "sumit1@chetu.com". (a4ab1676)
+2017-09-11T22:44:59.6842828+05:30 0HL7P71K1JSLB [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-09-11T22:44:59.6882825+05:30 0HL7P71K1JSLB [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-09-11T22:44:59.6912850+05:30 0HL7P71K1JSLB [INF] AuthenticationScheme: "Cookie" was challenged. (d45f1f38)
+2017-09-11T22:44:59.6942871+05:30 0HL7P71K1JSLB [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 16.9176ms (afa2e885)
+2017-09-11T22:44:59.7032938+05:30 0HL7P71K1JSLB [INF] Request finished in 73.6485ms 302  (15c52c40)
+2017-09-11T22:44:59.7092980+05:30 0HL7P71K1JSLC [INF] Request starting HTTP/1.1 GET http://localhost:62336/Account/Login?ReturnUrl=%2Fapi%2FAnswers%2F5   (e5be5b71)
+2017-09-11T22:44:59.7153022+05:30 0HL7P71K1JSLC [INF] Successfully validated the token. (60169667)
+2017-09-11T22:44:59.7193047+05:30 0HL7P71K1JSLC [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:44:59.7493265+05:30 0HL7P71K1JSLC [INF] Request finished in 38.8662ms 404  (15c52c40)
+2017-09-11T22:45:07.3915218+05:30 0HL7P71K1JSLD [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:45:07.3985257+05:30 0HL7P71K1JSLD [INF] Successfully validated the token. (60169667)
+2017-09-11T22:45:07.4015285+05:30 0HL7P71K1JSLD [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:45:07.4125356+05:30 0HL7P71K1JSLD [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-11T22:45:07.4151015+05:30 0HL7P71K1JSLD [INF] Authorization failed for user: "sumit1@chetu.com". (a4ab1676)
+2017-09-11T22:45:07.4191033+05:30 0HL7P71K1JSLD [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-09-11T22:45:07.4221054+05:30 0HL7P71K1JSLD [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-09-11T22:45:07.4251079+05:30 0HL7P71K1JSLD [INF] AuthenticationScheme: "Cookie" was challenged. (d45f1f38)
+2017-09-11T22:45:07.4281100+05:30 0HL7P71K1JSLD [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 16.4465ms (afa2e885)
+2017-09-11T22:45:07.4401184+05:30 0HL7P71K1JSLD [INF] Request finished in 52.9189ms 302  (15c52c40)
+2017-09-11T22:45:07.4461223+05:30 0HL7P71K1JSLE [INF] Request starting HTTP/1.1 GET http://localhost:62336/Account/Login?ReturnUrl=%2Fapi%2FAnswers%2F5   (e5be5b71)
+2017-09-11T22:45:07.4521269+05:30 0HL7P71K1JSLE [INF] Successfully validated the token. (60169667)
+2017-09-11T22:45:07.4561297+05:30 0HL7P71K1JSLE [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:45:07.5291811+05:30 0HL7P71K1JSLE [INF] Request finished in 75.5391ms 404  (15c52c40)
+2017-09-11T22:45:12.3329042+05:30 0HL7P71K1JSLF [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:45:12.3439119+05:30 0HL7P71K1JSLF [INF] Successfully validated the token. (60169667)
+2017-09-11T22:45:12.3469144+05:30 0HL7P71K1JSLF [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:45:12.3629256+05:30 0HL7P71K1JSLF [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-11T22:45:12.3669284+05:30 0HL7P71K1JSLF [INF] Authorization was successful for user: "sumit1@chetu.com". (d7eb274a)
+2017-09-11T22:45:12.3719323+05:30 0HL7P71K1JSLF [INF] Executing action method "Aguila.Controllers.AnswersController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:45:14.9776537+05:30 0HL7P71K1JSLF [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T22:45:16.0784293+05:30 0HL7P71K1JSLF [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 3703.2747ms (afa2e885)
+2017-09-11T22:45:16.1144553+05:30 0HL7P71K1JSLF [INF] Request finished in 3808.2241ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T22:45:39.7029780+05:30 0HL7P71K1JSLG [INF] Request starting HTTP/1.1 POST http://localhost:62336/token application/x-www-form-urlencoded 68 (e5be5b71)
+2017-09-11T22:45:39.7089836+05:30 0HL7P71K1JSLG [INF] Handling request: /token (8c275dec)
+2017-09-11T22:45:39.7195914+05:30 0HL7P71K1JSLG [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T22:45:42.0769435+05:30 0HL7P71K1JSLG [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[CreatedDate], [r].[Description], [r].[IPAddress], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0 (6438bdd5)
+2017-09-11T22:45:42.0899530+05:30 0HL7P71K1JSLG [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1) (6438bdd5)
+2017-09-11T22:45:42.0959558+05:30 0HL7P71K1JSLG [WRN] User "779e2a32-bbcd-4b92-8843-15676e9dcebe" is already in role "User". (337e5c15)
+2017-09-11T22:45:42.1119685+05:30 0HL7P71K1JSLG [INF] Request finished in 2405.3911ms 200 application/json (15c52c40)
+2017-09-11T22:46:18.8549263+05:30 0HL7P71K1JSLH [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:46:18.8619313+05:30 0HL7P71K1JSLH [INF] Successfully validated the token. (60169667)
+2017-09-11T22:46:18.8719386+05:30 0HL7P71K1JSLH [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:46:18.8829454+05:30 0HL7P71K1JSLH [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:46:18.8859478+05:30 0HL7P71K1JSLH [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:46:18.9710077+05:30 0HL7P71K1JSLH [INF] Executing action method "Aguila.Controllers.AnswersController.Get (Aguila)" with arguments (["5"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:46:19.0080331+05:30 0HL7P71K1JSLH [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T22:46:19.0120359+05:30 0HL7P71K1JSLH [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 128.9435ms (afa2e885)
+2017-09-11T22:46:19.0280485+05:30 0HL7P71K1JSLH [INF] Request finished in 186.8615ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T22:46:31.7845818+05:30 0HL7P71K1JSLI [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/Logout  0 (e5be5b71)
+2017-09-11T22:46:31.8005930+05:30 0HL7P71K1JSLI [INF] Successfully validated the token. (60169667)
+2017-09-11T22:46:31.8055955+05:30 0HL7P71K1JSLI [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:46:31.8226085+05:30 0HL7P71K1JSLI [INF] Executing action method "Aguila.Controllers.AccountController.Logout (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:47:08.6802529+05:30 0HL7P71K1JSLI [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2017-09-11T22:47:08.6892589+05:30 0HL7P71K1JSLI [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-09-11T22:47:08.6932614+05:30 0HL7P71K1JSLI [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2017-09-11T22:47:10.8721963+05:30 0HL7P71K1JSLI [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-09-11T22:47:10.8771998+05:30 0HL7P71K1JSLI [INF] Executed action "Aguila.Controllers.AccountController.Logout (Aguila)" in 39057.0336ms (afa2e885)
+2017-09-11T22:47:10.9212315+05:30 0HL7P71K1JSLI [INF] Request finished in 39136.7795ms 200  (15c52c40)
+2017-09-11T22:47:15.7188658+05:30 0HL7P71K1JSLJ [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:47:15.7258693+05:30 0HL7P71K1JSLJ [INF] Successfully validated the token. (60169667)
+2017-09-11T22:47:15.7298721+05:30 0HL7P71K1JSLJ [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:47:15.7398792+05:30 0HL7P71K1JSLJ [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:47:15.7428813+05:30 0HL7P71K1JSLJ [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:47:15.7478845+05:30 0HL7P71K1JSLJ [INF] Executing action method "Aguila.Controllers.AnswersController.Get (Aguila)" with arguments (["5"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:47:15.7639050+05:30 0HL7P71K1JSLJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T22:47:15.7679071+05:30 0HL7P71K1JSLJ [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 27.9418ms (afa2e885)
+2017-09-11T22:47:15.7829180+05:30 0HL7P71K1JSLJ [INF] Request finished in 129.2404ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T22:47:19.6913842+05:30 0HL7P71K1JSLK [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:47:19.7084010+05:30 0HL7P71K1JSLK [INF] Successfully validated the token. (60169667)
+2017-09-11T22:47:19.7123980+05:30 0HL7P71K1JSLK [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:47:19.7224057+05:30 0HL7P71K1JSLK [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:47:19.7264075+05:30 0HL7P71K1JSLK [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:47:19.7304103+05:30 0HL7P71K1JSLK [INF] Executing action method "Aguila.Controllers.AnswersController.Get (Aguila)" with arguments (["5"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:47:19.7424194+05:30 0HL7P71K1JSLK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T22:47:19.7464223+05:30 0HL7P71K1JSLK [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 23.4494ms (afa2e885)
+2017-09-11T22:47:19.7604328+05:30 0HL7P71K1JSLK [INF] Request finished in 81.688ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T22:47:31.0476907+05:30 0HL7P71K1JSLL [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:47:31.1067313+05:30 0HL7P71K1JSLL [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdW1pdDBAY2hldHUuY29tIiwianRpIjoiMjIyYTg2NzktMzEwYS00YjU1LWJhNWQtNjBlMTJkNWQxMDc5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJzdW1pdDBAY2hldHUuY29tIiwibmJmIjoxNTA1MTUwMTQyLCJleHAiOjE1MDUyMzY1NDIsImlzcyI6IkFndWlsYVRlY2hub2xvZ2llcyIsImF1ZCI6IkFndWlsYVRlY2hub2xvZ2llc0dvbGZUcmFpbmVyIn0.WYoEB_uiEV-w6xAzy7LhMSo7ER0sGa0ag9alLCZjmOga". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{"alg":"HS256","typ":"JWT"}.{"sub":"sumit0@chetu.com","jti":"222a8679-310a-4b55-ba5d-60e12d5d1079","http://schemas.microsoft.com/ws/2008/06/identity/claims/role":"User","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name":"sumit0@chetu.com","nbf":1505150142,"exp":1505236542,"iss":"AguilaTechnologies","aud":"AguilaTechnologiesGolfTrainer"}'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.<HandleAuthenticateAsync>d__1.MoveNext()
+2017-09-11T22:47:31.1127362+05:30 0HL7P71K1JSLL [INF] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{\"alg\":\"HS256\",\"typ\":\"JWT\"}.{\"sub\":\"sumit0@chetu.com\",\"jti\":\"222a8679-310a-4b55-ba5d-60e12d5d1079\",\"http://schemas.microsoft.com/ws/2008/06/identity/claims/role\":\"User\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\":\"sumit0@chetu.com\",\"nbf\":1505150142,\"exp\":1505236542,\"iss\":\"AguilaTechnologies\",\"aud\":\"AguilaTechnologiesGolfTrainer\"}'." (48071232)
+2017-09-11T22:47:31.1217425+05:30 0HL7P71K1JSLL [INF] Authorization failed for user: null. (a4ab1676)
+2017-09-11T22:47:31.1257457+05:30 0HL7P71K1JSLL [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-09-11T22:47:31.1287471+05:30 0HL7P71K1JSLL [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-09-11T22:47:31.1317496+05:30 0HL7P71K1JSLL [INF] AuthenticationScheme: "Cookie" was challenged. (d45f1f38)
+2017-09-11T22:47:31.1347524+05:30 0HL7P71K1JSLL [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 12.6561ms (afa2e885)
+2017-09-11T22:47:31.1437584+05:30 0HL7P71K1JSLL [INF] Request finished in 96.5981ms 302  (15c52c40)
+2017-09-11T22:47:31.1497626+05:30 0HL7P71K1JSLM [INF] Request starting HTTP/1.1 GET http://localhost:62336/Account/Login?ReturnUrl=%2Fapi%2FAnswers%2F5   (e5be5b71)
+2017-09-11T22:47:31.1607703+05:30 0HL7P71K1JSLM [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdW1pdDBAY2hldHUuY29tIiwianRpIjoiMjIyYTg2NzktMzEwYS00YjU1LWJhNWQtNjBlMTJkNWQxMDc5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJzdW1pdDBAY2hldHUuY29tIiwibmJmIjoxNTA1MTUwMTQyLCJleHAiOjE1MDUyMzY1NDIsImlzcyI6IkFndWlsYVRlY2hub2xvZ2llcyIsImF1ZCI6IkFndWlsYVRlY2hub2xvZ2llc0dvbGZUcmFpbmVyIn0.WYoEB_uiEV-w6xAzy7LhMSo7ER0sGa0ag9alLCZjmOga". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{"alg":"HS256","typ":"JWT"}.{"sub":"sumit0@chetu.com","jti":"222a8679-310a-4b55-ba5d-60e12d5d1079","http://schemas.microsoft.com/ws/2008/06/identity/claims/role":"User","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name":"sumit0@chetu.com","nbf":1505150142,"exp":1505236542,"iss":"AguilaTechnologies","aud":"AguilaTechnologiesGolfTrainer"}'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.<HandleAuthenticateAsync>d__1.MoveNext()
+2017-09-11T22:47:31.1657739+05:30 0HL7P71K1JSLM [INF] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{\"alg\":\"HS256\",\"typ\":\"JWT\"}.{\"sub\":\"sumit0@chetu.com\",\"jti\":\"222a8679-310a-4b55-ba5d-60e12d5d1079\",\"http://schemas.microsoft.com/ws/2008/06/identity/claims/role\":\"User\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\":\"sumit0@chetu.com\",\"nbf\":1505150142,\"exp\":1505236542,\"iss\":\"AguilaTechnologies\",\"aud\":\"AguilaTechnologiesGolfTrainer\"}'." (48071232)
+2017-09-11T22:47:31.1877894+05:30 0HL7P71K1JSLM [INF] Request finished in 36.4689ms 404  (15c52c40)
+2017-09-11T22:47:36.2810971+05:30 0HL7P71K1JSLN [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T22:47:36.2891034+05:30 0HL7P71K1JSLN [INF] Successfully validated the token. (60169667)
+2017-09-11T22:47:36.2931055+05:30 0HL7P71K1JSLN [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:47:36.3031126+05:30 0HL7P71K1JSLN [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:47:36.3061154+05:30 0HL7P71K1JSLN [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T22:47:36.3101175+05:30 0HL7P71K1JSLN [INF] Executing action method "Aguila.Controllers.AnswersController.Get (Aguila)" with arguments (["5"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:47:36.3231294+05:30 0HL7P71K1JSLN [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T22:47:36.3271319+05:30 0HL7P71K1JSLN [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 23.575ms (afa2e885)
+2017-09-11T22:47:36.3411421+05:30 0HL7P71K1JSLN [INF] Request finished in 60.8999ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T22:48:06.4987590+05:30 0HL7P71K1JSLO [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/Logout  0 (e5be5b71)
+2017-09-11T22:48:06.5087664+05:30 0HL7P71K1JSLO [INF] Successfully validated the token. (60169667)
+2017-09-11T22:48:06.5117678+05:30 0HL7P71K1JSLO [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:48:06.5217749+05:30 0HL7P71K1JSLO [INF] Executing action method "Aguila.Controllers.AccountController.Logout (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T22:53:00.9658958+05:30 0HL7P71K1JSLO [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2017-09-11T22:53:00.9698984+05:30 0HL7P71K1JSLO [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-09-11T22:53:00.9749015+05:30 0HL7P71K1JSLO [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2017-09-11T22:53:00.9809047+05:30 0HL7P71K1JSLO [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-09-11T22:53:00.9839072+05:30 0HL7P71K1JSLO [INF] Executed action "Aguila.Controllers.AccountController.Logout (Aguila)" in 294484.3979ms (afa2e885)
+2017-09-11T22:53:00.9889101+05:30 0HL7P71K1JSLO [INF] Request finished in 294514.2598ms 0  (15c52c40)
+2017-09-11T22:53:05.9238993+05:30 0HL7P71K1JSLP [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/Logout  0 (e5be5b71)
+2017-09-11T22:53:05.9299028+05:30 0HL7P71K1JSLP [INF] Successfully validated the token. (60169667)
+2017-09-11T22:53:05.9329050+05:30 0HL7P71K1JSLP [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T22:53:05.9399095+05:30 0HL7P71K1JSLP [INF] Executing action method "Aguila.Controllers.AccountController.Logout (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T23:00:46.7475802+05:30  [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-11T23:00:47.8133169+05:30 0HL7P7BBHG6P8 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/values   (e5be5b71)
+2017-09-11T23:00:49.0611791+05:30 0HL7P7BBHG6P9 [INF] Request starting HTTP/1.1 GET http://localhost:62336/api/Answers/5 application/x-www-form-urlencoded  (e5be5b71)
+2017-09-11T23:00:49.2523104+05:30 0HL7P7BBHG6P8 [INF] Executing action method "Aguila.Controllers.ValuesController.Get (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T23:00:49.3053467+05:30 0HL7P7BBHG6P8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T23:00:49.3363689+05:30 0HL7P7BBHG6P9 [INF] Successfully validated the token. (60169667)
+2017-09-11T23:00:49.3473765+05:30 0HL7P7BBHG6P9 [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T23:00:49.4134218+05:30 0HL7P7BBHG6P9 [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T23:00:49.4284321+05:30 0HL7P7BBHG6P9 [INF] Authorization was successful for user: "sumit0@chetu.com". (d7eb274a)
+2017-09-11T23:00:49.5545196+05:30 0HL7P7BBHG6P8 [INF] Executed action "Aguila.Controllers.ValuesController.Get (Aguila)" in 315.8916ms (afa2e885)
+2017-09-11T23:00:49.6475839+05:30 0HL7P7BBHG6P8 [INF] Request finished in 1839.5041ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T23:00:49.6635943+05:30 0HL7P7BBHG6P9 [INF] Executing action method "Aguila.Controllers.AnswersController.Get (Aguila)" with arguments (["5"]) - ModelState is Valid (ba7f4ac2)
+2017-09-11T23:00:51.6874638+05:30 0HL7P7BBHG6P9 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-11T23:00:51.7354963+05:30 0HL7P7BBHG6P9 [INF] Executed action "Aguila.Controllers.AnswersController.Get (Aguila)" in 2333.2882ms (afa2e885)
+2017-09-11T23:00:51.8195547+05:30 0HL7P7BBHG6P9 [INF] Request finished in 2746.8475ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-11T23:00:55.8997831+05:30 0HL7P7BBHG6PA [INF] Request starting HTTP/1.1 POST http://localhost:62336/api/Account/Logout  0 (e5be5b71)
+2017-09-11T23:00:55.9177966+05:30 0HL7P7BBHG6PA [INF] Successfully validated the token. (60169667)
+2017-09-11T23:00:55.9227997+05:30 0HL7P7BBHG6PA [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2017-09-11T23:00:55.9498184+05:30 0HL7P7BBHG6PA [INF] Executing action method "Aguila.Controllers.AccountController.Logout (Aguila)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-11T23:01:05.2456854+05:30 0HL7P7BBHG6PA [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AccountActive], [u].[Address], [u].[Age], [u].[BallFlight], [u].[City], [u].[ClubType], [u].[ConcurrencyStamp], [u].[DatePaid], [u].[DriverDistance], [u].[Email], [u].[EmailConfirmed], [u].[HandicapId], [u].[Height], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[LockoutEndDateUtc], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Self], [u].[SevenIronDistance], [u].[State], [u].[Twitter], [u].[TwoFactorEnabled], [u].[UserName], [u].[VoiceOver], [u].[Weight], [u].[Zip]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-11T23:01:30.7071957+05:30 0HL7P7BBHG6PA [INF] Executed DbCommand (18,959ms) [Parameters=[@__8__locals1_user_Id_0='?' (Size = 450), @__claim_Value_1='?' (Size = 4000), @__claim_Type_2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE (([uc].[UserId] = @__8__locals1_user_Id_0) AND ([uc].[ClaimValue] = @__claim_Value_1)) AND ([uc].[ClaimType] = @__claim_Type_2) (6438bdd5)
+2017-09-11T23:01:30.8251722+05:30 0HL7P7BBHG6PA [ERR] An exception occurred in the database while iterating the results of a query.
+ (3b5ca34b)
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. If you are connecting to a SQL Azure database consider using SqlAzureExecutionStrategy. ---> System.Data.SqlClient.SqlException: A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.) ---> System.ComponentModel.Win32Exception: The semaphore timeout period has expired
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__107_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable.AsyncEnumerator.<BufferlessMoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__6`2.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__6`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable.AsyncEnumerator.<MoveNext>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.SelectAsyncEnumerable`2.SelectAsyncEnumerator.<MoveNext>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.SelectAsyncEnumerable`2.SelectAsyncEnumerator.<MoveNext>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+2017-09-11T23:01:31.1333859+05:30 0HL7P7BBHG6PA [INF] Executed action "Aguila.Controllers.AccountController.Logout (Aguila)" in 35179.1186ms (afa2e885)
